@@ -214,6 +214,14 @@ body {
 	text-align: right;
 }
 
+.abilitydesc {
+	font-size: 11px;
+	color: green;
+	left: -8px;
+	top: 2px;
+}
+
+
 .abilityranknot {
 	font-size: 11px;
 	color: rgba(255, 255, 255, 0.4);
