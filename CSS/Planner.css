@@ -1,0 +1,301 @@
+/* General */
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+body { 
+	margin: 0; 
+	color: #999177; 
+	font-size: 14px; 
+	font-family: Arial; 
+	
+	background: #333333; /* Old browsers */
+	background: -moz-linear-gradient(top, #333333 0%, #2d2d2d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#333333), color-stop(100%,#2d2d2d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #333333 0%, #2d2d2d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #333333 0%,#2d2d2d 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #333333 0%, #2d2d2d 100%); /* IE10+ */
+
+	text-shadow: 0em 0em 0.2em rgba(0,0,0,0.9), 0em 0em 0.2em rgba(0,0,0,0.9);
+}
+
+#Body {
+	width: 990px;
+	height: 900px;
+	/*margin: auto;*/
+	box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.7);
+
+	background: #202020; /* Old browsers */
+	background: -moz-linear-gradient(top, #272727 0%, #202020 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#272727), color-stop(100%,#202020)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #272727 0%,#202020 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #272727 0%, #202020 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #272727 0%, #202020 100%); /* IE10+ */
+
+	padding: 12px 0px 0px 10px;
+}
+
+#Header {
+	width: 355px;
+	position: relative;
+	top: -1629px;
+	left: 623px;
+}
+
+/* Gauge */
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+#Planner {
+	position: relative; 
+	left: 2px;
+	float: left;
+}
+
+#Character {
+	width: 153px;
+	height: 200px;
+	position: relative; 
+	left: 2px;
+	float: left;
+}
+
+#Pseudo  {
+	width: 131px;
+	position: relative;
+	left: -140px;
+	top: -18px;
+}
+
+#Stats {
+	position: relative;
+	left: -140px;
+	top: -4px;
+}
+
+#AttributesDesc {
+	width: 330px;
+	height: 200px;
+	position: relative;
+	left: 622px;
+	top: -829px;
+}
+
+#SkillsDesc {
+	width: 330px;
+	height: 200px;
+	position: relative;
+	left: 622px;
+	top: -622px;
+}
+
+#Abilities {
+	position: relative;
+	top: -23px;
+	left: -13px;
+}
+
+#Mutations {
+	position: relative;
+	top: -23px;
+	left: -13px;
+}
+
+#MutationsDesc {
+	width: 330px;
+	height: 200px;
+	position: relative;
+	left: 632px;
+	top: -470px;
+}
+
+#panel_skilldescription {
+	width: 300px;
+	height: 334px;
+	position: relative;
+	top: -581px;
+	left: 643px;
+}
+
+#panel_attributedescription {
+	width: 350px;
+	height: 334px;
+	position: relative;
+	top: -788px;
+	left: 643px;
+}
+
+#panel_mutationdescription {
+	width: 350px;
+	height: 334px;
+	position: relative;
+	top: -629px;
+	left: 643px;
+}
+
+.GaugeFrame {  
+	background: rgba(0,0,0,0); 
+}
+
+.Icon{
+	padding:0;
+	box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.4);
+}
+
+.Label {
+	padding-right: 5px;
+}
+
+.GaugeBG {
+	padding:0;
+	text-align: left;
+	background-image: url('../Graphics/GaugeBG.png'); 
+}
+
+.Gauge {
+	width: 0px; 
+	height: 24px;  
+	position: relative; 
+	background-image: url('../Graphics/GaugeFill.png'); 
+}
+
+.Minimum {
+	text-align: right; 
+	color: rgba(255, 255, 255, 0.4);
+}
+
+.Maximum {
+	padding: 0;
+	text-align: left; 
+	color: rgba(255, 255, 255, 0.4);
+}
+
+.Increase {
+	padding:0;
+	width: 22px;
+	background-image: url('../Graphics/Increase.png'); 
+}
+
+.Decrease {
+	padding:0;
+	width: 22px;
+	background-image: url('../Graphics/Decrease.png'); 
+}
+
+.NoIncrease {
+	padding:0;
+	width: 22px;
+	background-image: url('../Graphics/NoIncrease.png'); 
+}
+
+.NoDecrease {
+	padding:0;
+	width: 22px;
+	background-image: url('../Graphics/NoDecrease.png'); 
+}
+
+.Value {
+	height: 16px; 
+	width:  29px; 
+	font-weight: bold; 
+	text-align: right; 
+}
+
+.DescV {
+	text-align: right;
+	height: 24px;
+	padding: 0 0 0 10px;
+}
+
+.Button {
+	width: 66px;
+	padding: 0;
+}
+
+.Button2 {
+	padding:0;
+	text-align: right;
+}
+
+.abilityranknot {
+	font-size: 11px;
+	color: rgba(255, 255, 255, 0.4);
+	position: relative;
+	left: -8px;
+	top: 2px;
+}
+
+.abilityrankgot {
+	font-size: 11px;
+	position: relative;
+	color: rgba(240, 230, 170, 0.7);
+	left: -8px;
+	top: 2px;
+}
+
+/* Inputs */
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+input[type=text] {
+	width: 105.5%;
+	height: 22px;
+}
+
+input[type=button] {
+	width: 98%;
+	height: 24px;
+}
+
+input[type=button]:hover {	
+	background: #1d1c18; /* Old browsers */
+	background: -moz-linear-gradient(top, #1d1c18 0%, #39372d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1d1c18), color-stop(100%,#39372d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #1d1c18 0%,#39372d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #1d1c18 0%, #39372d 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #1d1c18 0%, #39372d 100%); /* IE10+ */
+}
+
+input {
+	color: #999177; 
+	padding: 0 0 0 0;
+	border-radius: 2px;
+	text-align: center;
+	border: 1px solid rgba(154, 146, 118, 0.7);
+	
+	background: -moz-linear-gradient(top, #39372d 0%, #1d1c18 100%);
+	
+	background: #39372d; /* Old browsers */
+	background: -moz-linear-gradient(top, #39372d 0%, #1d1c18 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1d1c18), color-stop(100%,#1d1c18)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #39372d 0%,#1d1c18 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #39372d 0%, #1d1c18 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #39372d 0%, #1d1c18 100%); /* IE10+ */
+	
+	text-shadow: 0em 0em 0.2em rgba(0,0,0,0.9), 0em 0em 0.2em rgba(0,0,0,0.9);
+	box-shadow: inset 0px 0px 3px 2px rgba(0,0,0,0.5), 0px 0px 3px 1px rgba(0,0,0,0.4);
+}
+
+input[type=submit] {
+	width: 98%;
+	height: 24px;
+}
+
+input[type=submit]:hover {	
+	background: #1d1c18; /* Old browsers */
+	background: -moz-linear-gradient(top, #1d1c18 0%, #39372d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1d1c18), color-stop(100%,#39372d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #1d1c18 0%,#39372d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #1d1c18 0%, #39372d 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #1d1c18 0%, #39372d 100%); /* IE10+ */
+}
+
+/* Tables */
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+td {
+	padding-left: 7px;
+	line-height: 10px;
+}
+
+tr:hover {
+	background: rgba(255, 255, 255, 0.04);
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
