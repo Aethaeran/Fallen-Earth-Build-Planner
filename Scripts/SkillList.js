@@ -110,11 +110,11 @@ var ability_details = [
 
     [GR_TA, SUP, AUR, BUF, TEA, "Combat Endurance", "+Dodge (10-60)", [42, 72, 102, 132, 162, 192] ], 
     [GR_TA, SUP, AUR, BDB, TEA, "Offensive Coordination", "+Stamina Regen +Precision (10-60) -Dodge", [30, 60, 90, 120, 150, 180] ], 
-    [GR_TA, SUP, AUR, BUF, TEA, "Give em Hell", "+Power 30-45-60-75-90", [60, 90, 120, 150, 180] ], 
+    [GR_TA, SUP, AUR, BUF, TEA, "Give 'em Hell", "+Power 30-45-60-75-90", [60, 90, 120, 150, 180] ], 
     [GR_TA, OFF, ASK, DEB, ENE, "Overwhelm", "-Armor -Defense", [69, 99, 129, 159, 189] ], 
 
     [HE_WE, OFF, ASK, DEB, ENA, "Caltrops", "+Snare", [195] ], 
-    [HE_WE, OFF, ASK, DEB, ENA, "Soften em Up", "-Resist Slashing/Piercing/Fire/Acid 10 sec", [150, 180] ], 
+    [HE_WE, OFF, ASK, DEB, ENA, "Soften'em Up", "-Resist Slashing/Piercing/Fire/Acid 10 sec", [150, 180] ], 
     [HE_WE, OFF, STA, BUF, SEL, "Suppressive Fire", "+Damage: HW, Grenade, Mutation 5% / 10%", [165, 195] ], 
 
     [MELEE, OFF, ASK, BUF, SEL, "Charge", "+Speed", [60, 90, 120, 150, 180] ], 
