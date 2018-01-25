@@ -1,0 +1,614 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+  <!-- Header Start -->
+<title>Fallen Earth - Psychic's Online Character Planner</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="resource-type" content="document" />
+    <meta name="author" content="Psychic" />
+    <meta http-equiv="Content-Language" content="en-GB" />
+    <meta name="keywords" content="fallen earth, fe, character planner, character calculator, build calculator, ap, psychic, builder" />
+      
+    <script type="text/javascript" src="js/gauge.js?v=2.13"></script>
+    <script type="text/javascript" src="js/link.js?v=2.13"></script>
+    <script type="text/javascript" src="js/cookies.js?v=2.13"></script>
+    <script type="text/javascript" src="js/stat_handler.js?v=2.13"></script>
+    <script type="text/javascript" src="js/descriptions.js?v=2.13"></script>
+    <script type="text/javascript" src="js/windows.js?v=2.13"></script>
+    <script type="text/javascript" src="js/skill_list.js?v=2.13"></script>
+    <script type="text/javascript" src="js/summary.js?v=2.13"></script>
+    <script type="text/javascript" src="js/sorttable.js?v=2.13"></script>
+    <link type="text/css" rel="StyleSheet" href="css/css.css?v=2.13" />
+    <link href="/favicon.ico" rel="icon" type="image/x-icon" />
+  <!-- Header End -->  
+  </head>
+<body onload="javascript: decode_link(); open_sub_window('aboutbox'); ">  
+  
+  <!-- Body Start -->
+  <noscript>
+    <p class="alert">Please enable JavaScript for full functionality.</p>
+  </noscript>
+  
+  <!-- Start Character -->
+    <div class="gaugeframe" style="color: #000000; text-shadow: #C0C0A0 1px 1px 1px;">
+      <div class="gaugeframeheader">Details:</div>
+      <div style="position: relative; left: 2px">
+<script type="text/javascript">var g0 = new Gauge(0, 1, 1, 55)</script><div id="main0" class="main"><div id="label0" class="common label" onclick="showdescription(0)">Level</div><div id="min0"   class="common min" onclick="setmin(0); showdescription(0)">1</div><div id="minus0" class="common minus" onclick="lower(0); showdescription(0)"></div><div id="bar0"   class="common bar" style="width: 170px;" onclick="clickit(event, 0); showdescription(0)"><div id="gauge0" class="gauge"></div></div><div id="plus0"  class="common plus" onclick="raise(0); showdescription(0)"></div><div id="max0"   class="common max" onclick="setmax(0); showdescription(0)">55</div><div id="value0" class="common value">1</div></div><script type="text/javascript">var g1 = new Gauge(1, 0, 0, 40)</script><div id="main1" class="main"><div id="label1" class="common label" onclick="showdescription(1)">Bonus AP</div><div id="min1"   class="common min" onclick="setmin(1); showdescription(1)">0</div><div id="minus1" class="common minus" onclick="lower(1); showdescription(1)"></div><div id="bar1"   class="common bar" style="width: 170px;" onclick="clickit(event, 1); showdescription(1)"><div id="gauge1" class="gauge"></div></div><div id="plus1"  class="common plus" onclick="raise(1); showdescription(1)"></div><div id="max1"   class="common max" onclick="setmax(1); showdescription(1)">40</div><div id="value1" class="common value">0</div></div>      </div>  
+    </div>
+  <!-- End Character -->
+    
+  <!-- Start Attributes -->
+    <div class="gaugeframe" style="color: #000000; text-shadow: #A0A0C0 1px 1px 1px;">
+      <div class="gaugeframeheader">Attributes (5AP per point):</div>
+      <div style="position: relative; left: 2px">
+<script type="text/javascript">var g2 = new Gauge(2, 11, 11, 17)</script><div id="main2" class="main"><div id="label2" class="common label" onclick="showdescription(2)">Charisma</div><div id="min2"   class="common min" onclick="setmin(2); showdescription(2)">11</div><div id="minus2" class="common minus" onclick="lower(2); showdescription(2)"></div><div id="bar2"   class="common bar" style="width: 170px;" onclick="clickit(event, 2); showdescription(2)"><div id="gauge2" class="gauge"></div></div><div id="plus2"  class="common plus" onclick="raise(2); showdescription(2)"></div><div id="max2"   class="common max" onclick="setmax(2); showdescription(2)">17</div><div id="value2" class="common value">11</div></div><script type="text/javascript">var g3 = new Gauge(3, 11, 11, 17)</script><div id="main3" class="main"><div id="label3" class="common label" onclick="showdescription(3)">Coordination</div><div id="min3"   class="common min" onclick="setmin(3); showdescription(3)">11</div><div id="minus3" class="common minus" onclick="lower(3); showdescription(3)"></div><div id="bar3"   class="common bar" style="width: 170px;" onclick="clickit(event, 3); showdescription(3)"><div id="gauge3" class="gauge"></div></div><div id="plus3"  class="common plus" onclick="raise(3); showdescription(3)"></div><div id="max3"   class="common max" onclick="setmax(3); showdescription(3)">17</div><div id="value3" class="common value">11</div></div><script type="text/javascript">var g4 = new Gauge(4, 11, 11, 17)</script><div id="main4" class="main"><div id="label4" class="common label" onclick="showdescription(4)">Dexterity</div><div id="min4"   class="common min" onclick="setmin(4); showdescription(4)">11</div><div id="minus4" class="common minus" onclick="lower(4); showdescription(4)"></div><div id="bar4"   class="common bar" style="width: 170px;" onclick="clickit(event, 4); showdescription(4)"><div id="gauge4" class="gauge"></div></div><div id="plus4"  class="common plus" onclick="raise(4); showdescription(4)"></div><div id="max4"   class="common max" onclick="setmax(4); showdescription(4)">17</div><div id="value4" class="common value">11</div></div><script type="text/javascript">var g5 = new Gauge(5, 11, 11, 17)</script><div id="main5" class="main"><div id="label5" class="common label" onclick="showdescription(5)">Endurance</div><div id="min5"   class="common min" onclick="setmin(5); showdescription(5)">11</div><div id="minus5" class="common minus" onclick="lower(5); showdescription(5)"></div><div id="bar5"   class="common bar" style="width: 170px;" onclick="clickit(event, 5); showdescription(5)"><div id="gauge5" class="gauge"></div></div><div id="plus5"  class="common plus" onclick="raise(5); showdescription(5)"></div><div id="max5"   class="common max" onclick="setmax(5); showdescription(5)">17</div><div id="value5" class="common value">11</div></div><script type="text/javascript">var g6 = new Gauge(6, 11, 11, 17)</script><div id="main6" class="main"><div id="label6" class="common label" onclick="showdescription(6)">Intelligence</div><div id="min6"   class="common min" onclick="setmin(6); showdescription(6)">11</div><div id="minus6" class="common minus" onclick="lower(6); showdescription(6)"></div><div id="bar6"   class="common bar" style="width: 170px;" onclick="clickit(event, 6); showdescription(6)"><div id="gauge6" class="gauge"></div></div><div id="plus6"  class="common plus" onclick="raise(6); showdescription(6)"></div><div id="max6"   class="common max" onclick="setmax(6); showdescription(6)">17</div><div id="value6" class="common value">11</div></div><script type="text/javascript">var g7 = new Gauge(7, 11, 11, 17)</script><div id="main7" class="main"><div id="label7" class="common label" onclick="showdescription(7)">Perception</div><div id="min7"   class="common min" onclick="setmin(7); showdescription(7)">11</div><div id="minus7" class="common minus" onclick="lower(7); showdescription(7)"></div><div id="bar7"   class="common bar" style="width: 170px;" onclick="clickit(event, 7); showdescription(7)"><div id="gauge7" class="gauge"></div></div><div id="plus7"  class="common plus" onclick="raise(7); showdescription(7)"></div><div id="max7"   class="common max" onclick="setmax(7); showdescription(7)">17</div><div id="value7" class="common value">11</div></div><script type="text/javascript">var g8 = new Gauge(8, 11, 11, 17)</script><div id="main8" class="main"><div id="label8" class="common label" onclick="showdescription(8)">Strength</div><div id="min8"   class="common min" onclick="setmin(8); showdescription(8)">11</div><div id="minus8" class="common minus" onclick="lower(8); showdescription(8)"></div><div id="bar8"   class="common bar" style="width: 170px;" onclick="clickit(event, 8); showdescription(8)"><div id="gauge8" class="gauge"></div></div><div id="plus8"  class="common plus" onclick="raise(8); showdescription(8)"></div><div id="max8"   class="common max" onclick="setmax(8); showdescription(8)">17</div><div id="value8" class="common value">11</div></div><script type="text/javascript">var g9 = new Gauge(9, 11, 11, 17)</script><div id="main9" class="main"><div id="label9" class="common label" onclick="showdescription(9)">Willpower</div><div id="min9"   class="common min" onclick="setmin(9); showdescription(9)">11</div><div id="minus9" class="common minus" onclick="lower(9); showdescription(9)"></div><div id="bar9"   class="common bar" style="width: 170px;" onclick="clickit(event, 9); showdescription(9)"><div id="gauge9" class="gauge"></div></div><div id="plus9"  class="common plus" onclick="raise(9); showdescription(9)"></div><div id="max9"   class="common max" onclick="setmax(9); showdescription(9)">17</div><div id="value9" class="common value">11</div></div>      </div>
+    </div>
+  <!-- End Attributes -->
+    
+  <!-- Start Skills -->
+    <div class="gaugeframe" style="color: #000000; text-shadow: #A0C0A0 1px 1px 1px;">
+      <div class="gaugeframeheader">Skills (1AP per point):</div>
+      <div style="position: relative; left: 2px">
+<script type="text/javascript">var g10 = new Gauge(10, 1, 1, 196)</script><div id="main10" class="main"><div id="label10" class="common label" onclick="showdescription(10)">Armor Use</div><div id="min10"   class="common min" onclick="setmin(10); showdescription(10)">1</div><div id="minus10" class="common minus" onclick="lower(10); showdescription(10)"></div><div id="bar10"   class="common bar" style="width: 170px;" onclick="clickit(event, 10); showdescription(10)"><div id="gauge10" class="gauge"></div></div><div id="plus10"  class="common plus" onclick="raise(10); showdescription(10)"></div><div id="max10"   class="common max" onclick="setmax(10); showdescription(10)">196</div><div id="value10" class="common value">1</div></div><script type="text/javascript">var g11 = new Gauge(11, 1, 1, 196)</script><div id="main11" class="main"><div id="label11" class="common label" onclick="showdescription(11)">Dirty Tricks</div><div id="min11"   class="common min" onclick="setmin(11); showdescription(11)">1</div><div id="minus11" class="common minus" onclick="lower(11); showdescription(11)"></div><div id="bar11"   class="common bar" style="width: 170px;" onclick="clickit(event, 11); showdescription(11)"><div id="gauge11" class="gauge"></div></div><div id="plus11"  class="common plus" onclick="raise(11); showdescription(11)"></div><div id="max11"   class="common max" onclick="setmax(11); showdescription(11)">196</div><div id="value11" class="common value">1</div></div><script type="text/javascript">var g12 = new Gauge(12, 1, 1, 196)</script><div id="main12" class="main"><div id="label12" class="common label" onclick="showdescription(12)">Dodge</div><div id="min12"   class="common min" onclick="setmin(12); showdescription(12)">1</div><div id="minus12" class="common minus" onclick="lower(12); showdescription(12)"></div><div id="bar12"   class="common bar" style="width: 170px;" onclick="clickit(event, 12); showdescription(12)"><div id="gauge12" class="gauge"></div></div><div id="plus12"  class="common plus" onclick="raise(12); showdescription(12)"></div><div id="max12"   class="common max" onclick="setmax(12); showdescription(12)">196</div><div id="value12" class="common value">1</div></div><script type="text/javascript">var g13 = new Gauge(13, 1, 1, 196)</script><div id="main13" class="main"><div id="label13" class="common label" onclick="showdescription(13)">Escape Artist</div><div id="min13"   class="common min" onclick="setmin(13); showdescription(13)">1</div><div id="minus13" class="common minus" onclick="lower(13); showdescription(13)"></div><div id="bar13"   class="common bar" style="width: 170px;" onclick="clickit(event, 13); showdescription(13)"><div id="gauge13" class="gauge"></div></div><div id="plus13"  class="common plus" onclick="raise(13); showdescription(13)"></div><div id="max13"   class="common max" onclick="setmax(13); showdescription(13)">196</div><div id="value13" class="common value">1</div></div><script type="text/javascript">var g14 = new Gauge(14, 1, 1, 196)</script><div id="main14" class="main"><div id="label14" class="common label" onclick="showdescription(14)">First Aid</div><div id="min14"   class="common min" onclick="setmin(14); showdescription(14)">1</div><div id="minus14" class="common minus" onclick="lower(14); showdescription(14)"></div><div id="bar14"   class="common bar" style="width: 170px;" onclick="clickit(event, 14); showdescription(14)"><div id="gauge14" class="gauge"></div></div><div id="plus14"  class="common plus" onclick="raise(14); showdescription(14)"></div><div id="max14"   class="common max" onclick="setmax(14); showdescription(14)">196</div><div id="value14" class="common value">1</div></div><script type="text/javascript">var g15 = new Gauge(15, 1, 1, 196)</script><div id="main15" class="main"><div id="label15" class="common label" onclick="showdescription(15)">Group Tactics</div><div id="min15"   class="common min" onclick="setmin(15); showdescription(15)">1</div><div id="minus15" class="common minus" onclick="lower(15); showdescription(15)"></div><div id="bar15"   class="common bar" style="width: 170px;" onclick="clickit(event, 15); showdescription(15)"><div id="gauge15" class="gauge"></div></div><div id="plus15"  class="common plus" onclick="raise(15); showdescription(15)"></div><div id="max15"   class="common max" onclick="setmax(15); showdescription(15)">196</div><div id="value15" class="common value">1</div></div><script type="text/javascript">var g16 = new Gauge(16, 1, 1, 196)</script><div id="main16" class="main"><div id="label16" class="common label" onclick="showdescription(16)">Heavy Weapon</div><div id="min16"   class="common min" onclick="setmin(16); showdescription(16)">1</div><div id="minus16" class="common minus" onclick="lower(16); showdescription(16)"></div><div id="bar16"   class="common bar" style="width: 170px;" onclick="clickit(event, 16); showdescription(16)"><div id="gauge16" class="gauge"></div></div><div id="plus16"  class="common plus" onclick="raise(16); showdescription(16)"></div><div id="max16"   class="common max" onclick="setmax(16); showdescription(16)">196</div><div id="value16" class="common value">1</div></div><script type="text/javascript">var g17 = new Gauge(17, 1, 1, 196)</script><div id="main17" class="main"><div id="label17" class="common label" onclick="showdescription(17)">Melee</div><div id="min17"   class="common min" onclick="setmin(17); showdescription(17)">1</div><div id="minus17" class="common minus" onclick="lower(17); showdescription(17)"></div><div id="bar17"   class="common bar" style="width: 170px;" onclick="clickit(event, 17); showdescription(17)"><div id="gauge17" class="gauge"></div></div><div id="plus17"  class="common plus" onclick="raise(17); showdescription(17)"></div><div id="max17"   class="common max" onclick="setmax(17); showdescription(17)">196</div><div id="value17" class="common value">1</div></div><script type="text/javascript">var g18 = new Gauge(18, 1, 1, 196)</script><div id="main18" class="main"><div id="label18" class="common label" onclick="showdescription(18)">Pistol</div><div id="min18"   class="common min" onclick="setmin(18); showdescription(18)">1</div><div id="minus18" class="common minus" onclick="lower(18); showdescription(18)"></div><div id="bar18"   class="common bar" style="width: 170px;" onclick="clickit(event, 18); showdescription(18)"><div id="gauge18" class="gauge"></div></div><div id="plus18"  class="common plus" onclick="raise(18); showdescription(18)"></div><div id="max18"   class="common max" onclick="setmax(18); showdescription(18)">196</div><div id="value18" class="common value">1</div></div><script type="text/javascript">var g19 = new Gauge(19, 1, 1, 196)</script><div id="main19" class="main"><div id="label19" class="common label" onclick="showdescription(19)">Power</div><div id="min19"   class="common min" onclick="setmin(19); showdescription(19)">1</div><div id="minus19" class="common minus" onclick="lower(19); showdescription(19)"></div><div id="bar19"   class="common bar" style="width: 170px;" onclick="clickit(event, 19); showdescription(19)"><div id="gauge19" class="gauge"></div></div><div id="plus19"  class="common plus" onclick="raise(19); showdescription(19)"></div><div id="max19"   class="common max" onclick="setmax(19); showdescription(19)">196</div><div id="value19" class="common value">1</div></div><script type="text/javascript">var g20 = new Gauge(20, 1, 1, 196)</script><div id="main20" class="main"><div id="label20" class="common label" onclick="showdescription(20)">Precision</div><div id="min20"   class="common min" onclick="setmin(20); showdescription(20)">1</div><div id="minus20" class="common minus" onclick="lower(20); showdescription(20)"></div><div id="bar20"   class="common bar" style="width: 170px;" onclick="clickit(event, 20); showdescription(20)"><div id="gauge20" class="gauge"></div></div><div id="plus20"  class="common plus" onclick="raise(20); showdescription(20)"></div><div id="max20"   class="common max" onclick="setmax(20); showdescription(20)">196</div><div id="value20" class="common value">1</div></div><script type="text/javascript">var g21 = new Gauge(21, 1, 1, 196)</script><div id="main21" class="main"><div id="label21" class="common label" onclick="showdescription(21)">Rifle</div><div id="min21"   class="common min" onclick="setmin(21); showdescription(21)">1</div><div id="minus21" class="common minus" onclick="lower(21); showdescription(21)"></div><div id="bar21"   class="common bar" style="width: 170px;" onclick="clickit(event, 21); showdescription(21)"><div id="gauge21" class="gauge"></div></div><div id="plus21"  class="common plus" onclick="raise(21); showdescription(21)"></div><div id="max21"   class="common max" onclick="setmax(21); showdescription(21)">196</div><div id="value21" class="common value">1</div></div><script type="text/javascript">var g22 = new Gauge(22, 1, 1, 196)</script><div id="main22" class="main"><div id="label22" class="common label" onclick="showdescription(22)">Social</div><div id="min22"   class="common min" onclick="setmin(22); showdescription(22)">1</div><div id="minus22" class="common minus" onclick="lower(22); showdescription(22)"></div><div id="bar22"   class="common bar" style="width: 170px;" onclick="clickit(event, 22); showdescription(22)"><div id="gauge22" class="gauge"></div></div><div id="plus22"  class="common plus" onclick="raise(22); showdescription(22)"></div><div id="max22"   class="common max" onclick="setmax(22); showdescription(22)">196</div><div id="value22" class="common value">1</div></div><script type="text/javascript">var g23 = new Gauge(23, 1, 1, 196)</script><div id="main23" class="main"><div id="label23" class="common label" onclick="showdescription(23)">Max Crafting</div><div id="min23"   class="common min" onclick="showdescription(23)">1</div><div id="bar23"   class="common bar" style="width: 170px;" onclick="clickit(event, 23); showdescription(23)"><div id="gauge23" class="gauge"></div></div><div id="max23"   class="common max" onclick="showdescription(23)">196</div><div id="value23" class="common value">1</div></div>      </div>
+    </div>
+  <!-- End Skills -->    
+
+  <!-- Start Mutations -->
+    <div class="gaugeframe" style="color: #000000; text-shadow: #C0A0A0 1px 1px 1px;">
+      <div class="gaugeframeheader">Mutations (1AP per point):</div>
+      <div style="position: relative; left: 2px">
+<script type="text/javascript">var g24 = new Gauge(24, 1, 1, 196)</script><div id="main24" class="main"><div id="label24" class="common label" onclick="showdescription(24)">Alpha</div><div id="min24"   class="common min" onclick="showdescription(24)">1</div><div id="bar24"   class="common bar" style="width: 170px;" onclick="clickit(event, 24); showdescription(24)"><div id="gauge24" class="gauge"></div></div><div id="max24"   class="common max" onclick="showdescription(24)">196</div><div id="value24" class="common value">1</div></div><script type="text/javascript">var g25 = new Gauge(25, 1, 1, 196)</script><div id="main25" class="main"><div id="label25" class="common label" onclick="showdescription(25)">Empathic</div><div id="min25"   class="common min" onclick="setmin(25); showdescription(25)">1</div><div id="minus25" class="common minus" onclick="lower(25); showdescription(25)"></div><div id="bar25"   class="common bar" style="width: 170px;" onclick="clickit(event, 25); showdescription(25)"><div id="gauge25" class="gauge"></div></div><div id="plus25"  class="common plus" onclick="raise(25); showdescription(25)"></div><div id="max25"   class="common max" onclick="setmax(25); showdescription(25)">196</div><div id="value25" class="common value">1</div></div><script type="text/javascript">var g26 = new Gauge(26, 1, 1, 196)</script><div id="main26" class="main"><div id="label26" class="common label" onclick="showdescription(26)">Enhancement</div><div id="min26"   class="common min" onclick="setmin(26); showdescription(26)">1</div><div id="minus26" class="common minus" onclick="lower(26); showdescription(26)"></div><div id="bar26"   class="common bar" style="width: 170px;" onclick="clickit(event, 26); showdescription(26)"><div id="gauge26" class="gauge"></div></div><div id="plus26"  class="common plus" onclick="raise(26); showdescription(26)"></div><div id="max26"   class="common max" onclick="setmax(26); showdescription(26)">196</div><div id="value26" class="common value">1</div></div><script type="text/javascript">var g27 = new Gauge(27, 1, 1, 196)</script><div id="main27" class="main"><div id="label27" class="common label" onclick="showdescription(27)">Illumination</div><div id="min27"   class="common min" onclick="setmin(27); showdescription(27)">1</div><div id="minus27" class="common minus" onclick="lower(27); showdescription(27)"></div><div id="bar27"   class="common bar" style="width: 170px;" onclick="clickit(event, 27); showdescription(27)"><div id="gauge27" class="gauge"></div></div><div id="plus27"  class="common plus" onclick="raise(27); showdescription(27)"></div><div id="max27"   class="common max" onclick="setmax(27); showdescription(27)">196</div><div id="value27" class="common value">1</div></div><script type="text/javascript">var g28 = new Gauge(28, 1, 1, 196)</script><div id="main28" class="main"><div id="label28" class="common label" onclick="showdescription(28)">Nano-Manipulation</div><div id="min28"   class="common min" onclick="setmin(28); showdescription(28)">1</div><div id="minus28" class="common minus" onclick="lower(28); showdescription(28)"></div><div id="bar28"   class="common bar" style="width: 170px;" onclick="clickit(event, 28); showdescription(28)"><div id="gauge28" class="gauge"></div></div><div id="plus28"  class="common plus" onclick="raise(28); showdescription(28)"></div><div id="max28"   class="common max" onclick="setmax(28); showdescription(28)">196</div><div id="value28" class="common value">1</div></div><script type="text/javascript">var g29 = new Gauge(29, 1, 1, 196)</script><div id="main29" class="main"><div id="label29" class="common label" onclick="showdescription(29)">Patho-Transmission</div><div id="min29"   class="common min" onclick="setmin(29); showdescription(29)">1</div><div id="minus29" class="common minus" onclick="lower(29); showdescription(29)"></div><div id="bar29"   class="common bar" style="width: 170px;" onclick="clickit(event, 29); showdescription(29)"><div id="gauge29" class="gauge"></div></div><div id="plus29"  class="common plus" onclick="raise(29); showdescription(29)"></div><div id="max29"   class="common max" onclick="setmax(29); showdescription(29)">196</div><div id="value29" class="common value">1</div></div><script type="text/javascript">var g30 = new Gauge(30, 1, 1, 196)</script><div id="main30" class="main"><div id="label30" class="common label" onclick="showdescription(30)">Primal</div><div id="min30"   class="common min" onclick="setmin(30); showdescription(30)">1</div><div id="minus30" class="common minus" onclick="lower(30); showdescription(30)"></div><div id="bar30"   class="common bar" style="width: 170px;" onclick="clickit(event, 30); showdescription(30)"><div id="gauge30" class="gauge"></div></div><div id="plus30"  class="common plus" onclick="raise(30); showdescription(30)"></div><div id="max30"   class="common max" onclick="setmax(30); showdescription(30)">196</div><div id="value30" class="common value">1</div></div><script type="text/javascript">var g31 = new Gauge(31, 1, 1, 196)</script><div id="main31" class="main"><div id="label31" class="common label" onclick="showdescription(31)">Sonic</div><div id="min31"   class="common min" onclick="setmin(31); showdescription(31)">1</div><div id="minus31" class="common minus" onclick="lower(31); showdescription(31)"></div><div id="bar31"   class="common bar" style="width: 170px;" onclick="clickit(event, 31); showdescription(31)"><div id="gauge31" class="gauge"></div></div><div id="plus31"  class="common plus" onclick="raise(31); showdescription(31)"></div><div id="max31"   class="common max" onclick="setmax(31); showdescription(31)">196</div><div id="value31" class="common value">1</div></div><script type="text/javascript">var g32 = new Gauge(32, 1, 1, 196)</script><div id="main32" class="main"><div id="label32" class="common label" onclick="showdescription(32)">Suppression</div><div id="min32"   class="common min" onclick="setmin(32); showdescription(32)">1</div><div id="minus32" class="common minus" onclick="lower(32); showdescription(32)"></div><div id="bar32"   class="common bar" style="width: 170px;" onclick="clickit(event, 32); showdescription(32)"><div id="gauge32" class="gauge"></div></div><div id="plus32"  class="common plus" onclick="raise(32); showdescription(32)"></div><div id="max32"   class="common max" onclick="setmax(32); showdescription(32)">196</div><div id="value32" class="common value">1</div></div><script type="text/javascript">var g33 = new Gauge(33, 1, 1, 196)</script><div id="main33" class="main"><div id="label33" class="common label" onclick="showdescription(33)">Telekinesis</div><div id="min33"   class="common min" onclick="setmin(33); showdescription(33)">1</div><div id="minus33" class="common minus" onclick="lower(33); showdescription(33)"></div><div id="bar33"   class="common bar" style="width: 170px;" onclick="clickit(event, 33); showdescription(33)"><div id="gauge33" class="gauge"></div></div><div id="plus33"  class="common plus" onclick="raise(33); showdescription(33)"></div><div id="max33"   class="common max" onclick="setmax(33); showdescription(33)">196</div><div id="value33" class="common value">1</div></div><script type="text/javascript">var g34 = new Gauge(34, 1, 1, 196)</script><div id="main34" class="main"><div id="label34" class="common label" onclick="showdescription(34)">Thermal Control</div><div id="min34"   class="common min" onclick="setmin(34); showdescription(34)">1</div><div id="minus34" class="common minus" onclick="lower(34); showdescription(34)"></div><div id="bar34"   class="common bar" style="width: 170px;" onclick="clickit(event, 34); showdescription(34)"><div id="gauge34" class="gauge"></div></div><div id="plus34"  class="common plus" onclick="raise(34); showdescription(34)"></div><div id="max34"   class="common max" onclick="setmax(34); showdescription(34)">196</div><div id="value34" class="common value">1</div></div>      </div>
+    </div>
+  <!-- End Mutations -->
+  
+  <!-- Description Panels Start -->
+<div class="descriptionpanel characterdescription"><div class="descriptionpanelheader" style="text-shadow: #C0C0A0 1px 1px 1px;" id="header_characterdescription"></div><div class="desc_text" id="panel_characterdescription">&nbsp;</div></div><div class="descriptionpanel attributedescription"><div class="descriptionpanelheader" style="text-shadow: #A0A0C0 1px 1px 1px;" id="header_attributedescription">Attribute Description:</div><div class="desc_text" id="panel_attributedescription">&nbsp;</div></div><div class="descriptionpanel skilldescription"><div class="descriptionpanelheader" style="text-shadow: #A0C0A0 1px 1px 1px;" id="header_skilldescription">Skill Description:</div><div class="desc_text" id="panel_skilldescription">&nbsp;</div></div><div class="descriptionpanel mutationdescription"><div class="descriptionpanelheader" style="text-shadow: #C0A0A0 1px 1px 1px;" id="header_mutationdescription">Mutation Description:</div><div class="desc_text" id="panel_mutationdescription">&nbsp;</div></div> 
+  <!-- End Description Panels -->
+
+  <!-- Link Bar Start -->
+  <div class="linkbar">
+<a href="javascript:open_sub_window('creationguidebox')">Creation Guide</a>&nbsp;-
+<a href="javascript:open_sub_window('predefinedbuildsbox')">Predefined Builds</a>&nbsp;-
+<a href="javascript:open_sub_window('factionwheelbox')">Faction Wheel</a>&nbsp;-
+<a href="javascript:open_sub_window('townlevelsbox')">Town Levels</a>&nbsp;-
+<a href="javascript:open_sub_window('banklocationsbox')">Bank Locations</a>&nbsp;-
+<a href="javascript:open_sub_window('fasttravelbox')">Fast Travel</a>&nbsp;-
+<a href="javascript:open_sub_window('garagemapbox')">Garage Map</a>&nbsp;-
+<a href="javascript:open_sub_window('craftingbox')">Crafting Guide</a>
+<br />
+<a href="http://fallen-earth.ru" target="_blank">RUSSIAN fan site with valid information about Fallen Earth</a>&nbsp; -
+<a href="http://forums.gamersfirst.com/forum/746-/" target="_blank">Official Forum</a>&nbsp;-
+<a href="http://www.gamersfirst.com/fallenearth/?q=Patch2.7" target="_blank">Patch Notes</a>&nbsp;
+
+
+  </div>
+  <!-- End Link Bar -->
+
+  <!-- Buttons Start -->
+  <div class="startbutton" onclick="javascript:close_all_sub_windows(); new_character();"></div>
+  <div class="summarybutton" onclick="javascript:prepare_summary(); open_sub_window('summarybox')"></div>
+  <div class="ibutton" onclick="javascript:open_sub_window('bonusapbox')"></div>
+  <div class="import_reload">
+    <a href="javascript:load()">Import</a>&nbsp;-&nbsp;<a href="javascript:reload()">Reload</a>
+  </div>
+  <!-- End Buttons -->
+
+  <!-- Summary and Clear buttons -->
+<div class="summarybox" id="summarybox" style="overflow: hidden"><div class="closeX" onclick="javascript:close_sub_window('summarybox')">X</div><span class="sub_window_header">Character Summary</span><div id="summary_content" class="summary_text"></div></div>
+<div id="aboutbox" style="overflow: hidden"></div>
+  <!-- And no start Window now -->    
+
+  <!-- Need for other clicks only -->
+<div id="startertownsbox" style="overflow: hidden"></div>
+<div id="transportbox" style="overflow: hidden"><div id="animals"></div><div id="vehicles"></div></div></div>
+<div id="capstonesbox" style="overflow: hidden"></div>
+<div id="bonusapbox" style="overflow: hidden"></div>
+<div id="abilitylistbox" style="overflow: hidden"></div>
+
+
+<div class="factionwheelbox" id="factionwheelbox" style="overflow: hidden"><div class="closeX" onclick="javascript:close_sub_window('factionwheelbox')">X</div>    <div style="float: left; width: 510px;"><img src="images/faction-wheel.jpg" alt="Faction Wheel" height="500" width="500"/></div>
+    <div style="padding: 0 5px; float: left; width: 280px; text-align: left; line-height: 13px; ">
+    <span class="sub_window_header">Faction Relationship Wheel<br /><br /></span>
+    <div style="font-size: 11px;">
+The basic faction system functions as a wheel. Each faction has two allied factions (next to them on the wheel), one archenemy faction (opposite them on the wheel), and two enemy factions (next to the archenemy on the wheel.<br />
+    <br />
+When you complete a mission that is a significant help to a faction, you gain reputation points with that faction. You also gain half as many points with your allied factions. However, you lose twice that much from your rating with your archenemy, and you lose an amount equal to your gain from your enemy factions. Thus, there is no way to manage a long-term balancing act by helping everyone equally; in the end, they'll all hate you for being a waffling turncoat.<br /> 
+    <br />
+However, these alliances do allow you to change your faction by working your way around the wheel. In the earlier stages of the game, switching factions is not hard, but the longer you are part of a faction, the harder it gets to change.<br />
+    <br />
+As you gain standing with a faction, new missions, merchants, and restricted knowledge become available. You can earn ranks and join in the capture of conflict towns.<br />
+    <br />
+It is worth noting though, that faction choices do not need to be made until Sector 2, which starts around level 15. Before then, there are no faction based missions that affect repuation standings.
+    </div>
+    </div>
+</div><div class="townlevelsbox" id="townlevelsbox" style="overflow: hidden"><div class="closeX" onclick="javascript:close_sub_window('townlevelsbox')">X</div>    <span class="sub_window_header">Town Levels<br /><br /></span>
+    <div style="position: absolute; top: 20px; left: 5px; width: 190px; line-height: 13px;">
+      <div style="text-align: left"><b><span class="summary_header">Sector 1</span></b></div>
+<div style="text-align: left; font-size: 11px">
+<b>Starter Towns (Levels 1-5)</b><br />
+Clinton Farm<br />
+Midway<br />
+Boneclaw<br />
+South Burb<br />
+North Burb<br />
+Mumford<br />
+Terance<br />
+Zanesville<br />
+Depot 66<br />
+<b>Central Towns</b><br />
+Odenville 4-8<br />
+Oilville 4-8<br />
+Embry Crossroads 4-8<br />
+Linewood 7-10<br />
+Kingman 7-10<br />
+<b>Upper Plateau</b><br />
+Coppermine 10-13<br />
+Mobray/Pinkston 12-14<br />
+Pass Chris 10-13<br />
+Watchtower 10-13<br />
+Trailer Park 13-15<br />
+Trumbull 13-15<br />
+Spider Hill 13-15<br />   
+</div>
+    </div>
+    <div style="position: absolute; top: 20px; left: 205px; width: 190px; line-height: 13px;">
+      <div style="text-align: left"><b><span class="summary_header">Sector 2</span></b></div>
+<div style="text-align: left; font-size: 11px">
+The Oasis 13-15<br /> 
+Sunshine Corners 15-20<br /> 
+The Gallows 15-20<br /> 
+Post 23 15-20<br /> 
+Picus Ridge 15-20<br /> 
+Thorne's Bluff 15-20<br /> 
+Fracture 15-20<br /> 
+Credit Bend 15-20<br /> 
+Haven 15-20<br /> 
+New Flagstaff 20-30<br /> 
+Tinkersdam 20-25<br /> 
+Barret Manor 20-25<br /> 
+Devon Township 21-25<br /> 
+Burnside 25-30<br /> 
+Windfarm 25-30<br /> 
+The Dump 25-30<br /> 
+Blaine 25-30<br /> 
+Hollister Point 25-30<br />       
+</div>
+    </div>
+    <div style="position: absolute; top: 20px; left: 405px; width: 190px; line-height: 13px;">
+      <div style="text-align: left"><b><span class="summary_header">Sector 3</span></b></div>
+<div style="text-align: left; font-size: 11px">
+Dieseltown 30-35<br /> 
+Docuer's Court 30-35<br /> 
+Monkeytown/ Quarantine 30-35<br /> 
+Willoughby's Garage 30-35<br /> 
+Waste Farm 30-40<br /> 
+Chemtown 35-40<br /> 
+Banker's Hole 35-40<br /> 
+Warhall 35-40<br /> 
+Black Hill 35-40<br /> 
+St. Sebastians 35-40<br /> 
+Gaia 35-40<br /> 
+Haietta 35-40<br /> 
+Fender Gate 35-40<br /> 
+Papermill 35-40<br /> 
+Trader's Flat 35-40<br /> 
+The Repository 40-45<br /> 
+Tannerfield 40-45<br /> 
+Blackridge 40-45<br /> 
+Brigg's Point 43-45<br /> 
+Park City 45-50<br /> 
+Deadfall Point 45-50<br /> 
+</div>
+    </div>
+    
+    <div style="position: absolute; top: 20px; left: 605px; width: 190px; line-height: 13px;">
+      <div style="text-align: left"><b><span class="summary_header">Beyond</span></b></div>
+<div style="text-align: left; font-size: 11px">
+<b>Deadfall</b><br />
+Wasted Wood 45-50<br /> 
+Pitchblende 45-50<br /> 
+Rothium Ridge 46-50<br /> 
+Los Alamos 47-50<br /> 
+<b>Terminal Woods</b><br /> 
+Rock Bottom 50-55<br /> 
+Nothing Left 50-55<br /> 
+<b>Alpha County</b><br /> 
+Shackleton 50-55<br /> 
+End Run 50-55<br /> 
+Mercy 50-55<br /> 
+Desolation 50-55<br /> 
+Camp Sagan 50-55<br /> 
+Scorcher Base 50-55<br /> 
+Post 88 50-55<br /> 
+Redemption 50-55 <br /> 
+</div>
+    </div>
+</div><div class="banklocationsbox" id="banklocationsbox" style="overflow: hidden"><div class="closeX" onclick="javascript:close_sub_window('banklocationsbox')">X</div>    <span class="sub_window_header">Bank Vault Locations<br /><br /></span>
+<div style="text-align: left; font-size: 11px; padding: 0 5px; line-height: 13px;">
+Sector Vaults are commonplace and are present in almost every town. Barter Vaults are fewer in number, and only appear in larger a few larger towns. VIP (AKA Banker's Vault) are located in the "capital" cities of each sector.
+</div>    
+    <div style="position: absolute; top: 70px; left: 5px; width: 190px; line-height: 13px;">
+      <div style="text-align: left"><b><span class="summary_header">Sector 1</span></b></div>
+<div style="text-align: left; font-size: 11px">
+<b>Barter Vaults</b><br />
+Coppermine<br />
+Kingman<br />
+Odenville<br />
+Embry Crossroads<br />
+Oilville<br />
+Watchtower<br />
+Trailer Park<br />
+Spider Hill<br />
+Pass Chris<br />
+<b>VIP/Banker's Vault</b><br />
+Embry Crossroads
+</div>
+    </div>
+    <div style="position: absolute; top: 70px; left: 205px; width: 190px; line-height: 13px;">
+      <div style="text-align: left"><b><span class="summary_header">Sector 2</span></b></div>
+<div style="text-align: left; font-size: 11px">
+<b>Barter Vaults</b><br />
+Haven<br />
+Picus Ridge<br />
+Post 23<br />
+Barret Manor<br />
+Thorne's Bluff<br />
+Blaine<br />
+Sunshine Corners<br />
+New Flagstaff<br />
+Credit Bend<br />
+Devon Township<br />
+Last Stop<br />
+Fracture<br />
+<b>VIP/Banker's Vault</b><br />
+New Flagstaff<br /> 
+Blaine
+</div>
+    </div>
+    <div style="position: absolute; top: 70px; left: 405px; width: 190px; line-height: 13px;">
+      <div style="text-align: left"><b><span class="summary_header">Sector 3</span></b></div>
+<div style="text-align: left; font-size: 11px">
+<b>Barter Vaults</b><br />
+Brigg's Point<br />
+Stronghold<br />
+Dieseltown<br />
+Chemtown<br />
+Banker's Hole<br />
+Docuer's Court<br />
+Papermill<br />
+Warhall<br />
+Black Hill<br />
+The Repostitory<br />
+Tannerfield<br />
+Gaia<br />
+St.Sebastian's<br />
+Trader's Flat<br />
+<b>VIP/Banker's Vault</b><br />
+Trader's Flat
+</div>
+    </div>
+    <div style="position: absolute; top: 70px; left: 605px; width: 190px; line-height: 13px;">
+      <div style="text-align: left"><b><span class="summary_header">Beyond</span></b></div>
+<div style="text-align: left; font-size: 11px">
+<b>Barter Vaults</b><br />
+TBD<br />
+<b>VIP/Banker's Vault</b><br />
+Los Alamos
+</div>
+    </div>
+</div>
+
+<div class="fasttravelbox" id="fasttravelbox" style="overflow: hidden"><div class="closeX" onclick="javascript:close_sub_window('fasttravelbox')">X</div>    <span class="sub_window_header">Fast Travel Locations<br /><br /></span>
+<div style="text-align: left; font-size: 11px; padding: 0 5px; line-height: 13px;">
+The Fast Travel system is a means of moving between specific towns and sectors rapidly. This is done by entering a fast travel terminal, which looks like a modified LifeNet bunker, and interacting with the console to specify which destination is desired. Destinations are level-limited, based primarily on sector. Sector 1 destinations have a minimum level of 1, Sector 2 locations require a level of 15 (except for New Flagstaff and Barret Manor which are also at 1), Sector 3 locations require level 30, and Alpha county locations require level 45.<br />
+All locations need to be unlocked through global donations. Once unlocked, a clone will need to visit a fast travel location to register his/her DNA at that location to enable fast travel to there.<br />
+<br />
+Using the fast travel system costs some number of chips based on the level of the clone and the distance between the current location and the desired destination. When using Fast Travel, your mount does not transport with you. However, LifeNet bunkers are often nearby Stables and Garages, allowing you to park your mount and tow it to the new location for a lower fee than usual.<br />
+<br />
+Starting in Sector 2, faction town Fast Travel nodes require a small amount of the appropriate faction to use. However, the Fast Travel knowledge can be unlocked by using the Fast Travel terminal even if you do not possess the appropriate faction.
+</div>
+    <div style="position: absolute; top: 240px; left: 5px; width: 190px; line-height: 13px;">
+      <div style="text-align: left"><b><span class="summary_header">Sector 1</span></b></div>
+<div style="text-align: left; font-size: 11px">
+Coppermine<br />
+Kingman<br />
+Odenville<br />
+Embry Crossroads<br />
+Oilville<br />
+Watchtower<br />
+Trailer Park<br />
+Spider Hill<br />
+Pass Chris<br />
+</div>
+    </div>
+    <div style="position: absolute; top: 240px; left: 205px; width: 190px; line-height: 13px;">
+      <div style="text-align: left"><b><span class="summary_header">Sector 2</span></b></div>
+<div style="text-align: left; font-size: 11px">
+Haven<br />
+Picus Ridge<br />
+Post 23<br />
+Barret Manor<br />
+Thorne's Bluff<br />
+Blaine<br />
+Sunshine Corners<br />
+New Flagstaff<br />
+Credit Bend<br />
+Devon Township<br />
+Last Stop<br />
+Fracture<br />
+</div>
+    </div>
+    <div style="position: absolute; top: 240px; left: 405px; width: 190px; line-height: 13px;">
+      <div style="text-align: left"><b><span class="summary_header">Sector 3</span></b></div>
+<div style="text-align: left; font-size: 11px">
+Brigg's Point<br />
+Stronghold<br />
+Dieseltown<br />
+Chemtown<br />
+Banker's Hole<br />
+Docuer's Court<br />
+Papermill<br />
+Warhall<br />
+Black Hill<br />
+The Repostitory<br />
+Tannerfield<br />
+Gaia<br />
+St.Sebastian's<br />
+Trader's Flat<br />
+</div>
+    </div>
+    <div style="position: absolute; top: 240px; left: 605px; width: 190px; line-height: 13px;">
+      <div style="text-align: left"><b><span class="summary_header">Beyond</span></b></div>
+<div style="text-align: left; font-size: 11px">
+<b>Deadfall</b><br />
+Los Alamos<br />
+Wasted Wood<br />
+Citadel<br />
+Pitchblende<br />
+<b>Terminal Woods</b><br />
+Rock Bottom<br />
+Nothing Left<br />
+<b>Alpha County</b><br />
+Shackleton<br />
+End Run<br />
+Mercy<br />
+Desolation<br />
+Camp Sagan<br />
+Scorcher Base<br />
+Post 88<br />
+Redemption<br />
+</div>
+    </div>
+</div>
+
+<div class="creationguidebox" id="creationguidebox" style="overflow: hidden"><div class="closeX" onclick="javascript:close_sub_window('creationguidebox')">X</div>    <div style="padding: 0 5px; float: left; width: 695px; text-align: left; ">
+      <span class="sub_window_header">Character Creation Guide</span><br /><br />
+      <div style="font-size: 10px; width: 695px; height: 483px; overflow: scroll">
+In order to plan out a character, you need to know what your primary goals are:<br />
+<ul>
+<li>What weapon(s) do you want to use?</li>
+<li>Are you more inclined to PvE rather than PvP?</li>
+<li>Do you want to be a serious crafter?</li>
+<li>Are you a patient questor?</li>
+</ul><br />
+Also, is there anything you want as mandatory in your build (full crafter, healer etc)? If there is, be sure to build around this.<br />
+<br />
+<span style="color: yellow"><b>AP Availability</b></span><br />
+Your character will have a base of 30 AP per level to spend.<br />
+On top of this though, you can earn 'Bonus AP'. The amount of Bonus AP you can gain at any level is capped to (level x 5) + 35<br />
+So, for example, at level 10, you could have a maximum of 300 Base AP + 85 Bonus AP to spend.<br />
+At max level, currently 55, your maximum possible AP, is 1960.<br />
+<br />
+However, this Bonus AP has to be gained. This can be done in two ways:<br />
+<ul>
+<li>Finding and completing AP quests. These are available in every town, and sometimes you may need to search through lower level towns to find them, which needs patience.</li>
+<li>Getting 'Random AP'. Randomly, the game will award you AP. This cannot be relied on, and we don't know how/why/when we'll get it. This is a slow way of gaining Bonus AP.</li>
+<li>Rallies: Certain garages offer repeatable quests, which are in the form of races. Complete them in a certain time, and you are rewarded with 1 or 2 AP.</li>
+</ul>
+<br />
+As such, the amount of Bonus AP you have at any time will be down to how much effort you put in to finding it. It is suggested that when you plan builds, to only use about half of the maximum available Bonus AP.<br />
+So, for example, at level 10, you could have a maximum of 385 AP to spend, but only assume around 342 AP, unless you are really going to be an AP Hunter!<br />
+<br />
+<span style="color: yellow"><b>Costs</b></span><br />
+To increase an attribute, it costs 5AP per point. This can ge expensive fast, so it isn't usually recommended to have more than 4 attributes maxed.<br /> 
+Skills and Mutations each cost 1AP per point spend.<br /> 
+<br />
+At high level, it is possible to max 7 skills or mutations, whilst having 4 maxed attributes.<br />
+With 5 maxed attributes, you can't quite max 6 skills, even with max bonus AP.<br />
+<br />
+And remember, Attributes affect the maximum values that skills and mutations can reach. They don't give you any extra abilities directly though.<br />
+The Skills and Mutations themselves, give you extra abilities. As you rise in level, and go against higher level targets, you will find you'll want to higher level versions of these abilities.<br />
+<br />
+However, it isn't always the fact that you'd want to 'min-max' your abilities. Whilst certain abilities are the type of 'your stat vs their stat', others are more utility, and therefore will still work at a lower level. Their effectiveness, compared to your level may be lower, but they would still be an improvment over nothing.<br />
+<br />
+However, Attributes do go towards calculating other character stats:<br />
+You Gamma pool (used for mutations) is based on your Charisma and Intelligence<br /> 
+Stamina, used for Abilities, is based around Coordination and Dexterity<br />
+Your Hit Points go up with Endurance and Strength<br />
+The amount of weight you can carry is affected by your Strength.<br />
+<br />
+Also, Endurance and Strength go towards your natural resistance to poisons and disease.<br />
+Intelligence and Willpower give your resistance to mind-based attacks.<br />
+Coordination and Dexterity allow you to react quicker, giving a higher Reflex save.<br />
+Perception also inreases your chance to 'see' enemy players on the radar, compared against their Escape Artist skill.<br />
+<br />
+<span style="color: yellow"><b>Weapons</b></span><br />
+There are three weapons skills: Melee, Pistol and Rifle<br />
+<br />
+Whilst you 'can' put AP into all three skills, it isn't recommended. There is an argument for having both Pistol and Rifle, as they share the same base attributes, but mixing Melee and Range is usually a bad outcome.<br />
+<br />
+Depending on your chosen weapon, you will probably need to maximize the attributes that are associated with it:<br />
+<ul>
+<li>Melee - Coordination (50%) and Strength (50%)</li>
+<li>Pistol - Dexterity (50%) and Perception (50%)</li>
+<li>Rifle - Dexterity (50%) and Perception (50%)</li>
+</ul>
+<br />
+<span style="color: yellow"><b>Crafting</b></span><br />
+If you plan on being able to craft max level items, you will need to maximize the base attributes for crafting. These are: Intelligence (75%) and Perception (25%)<br />
+<br />
+As Perception is also present for ranged weapons, these two go well together at it can save a lot of AP. However, ranged characters, with no need for Strength, have a much lower carry weight capacity.<br />
+<br />
+<span style="color: yellow"><b>Defences</b></span><br />
+<b>Armor Use</b> - Give you passive bonus +15% to all resistances when maxed for your level. At 55-th lvl you need add 13 AP to gain each +1%. (196-1)/15=13. Base stats are Coordination (25%) and Endurance (75%)<br />
+<b>Hit Points</b> - Whilst your hit points will rise with level, they also rise with both Strength (3hp) and Endurance (4hp)<br />
+<b>Dodge</b> - Negates 36% of bonus crits and armor penetrating when maxed for level. And it not mean what if you opponent has 10% armor penetrating, you negate all of this. No, only 36% from this 10%. Base stats for this skill are: Coordination (50%) and Perception (50%)<br />
+<br />
+Whilst you don't 'need' to maximize any of these skills, and therefore attributes, it is usually unwise to avoid them altogether.<br />
+<br />
+<span style="color: yellow"><b>Extra Damage</b></span><br />
+There are two skillsets that increase your damage output (both ranged and melee).<br />
+<b>Precision</b> - Critical hits chance = +19.8% when maxed for your level or +1% for ~10 APs at 55th lvl. Dexterity (50%) Intelligence (50%)<br /><br />
+<b>Power</b> - When Power maxed for your level it give you +6.07% armor penetrating. Strength (50%) Endurance (50%)<br />
+Melee usually leans towards Power, whilst Ranged towards Precision. You can take both, but the base attributes make it difficult to maximize these.<br />
+<br />
+<span style="color: yellow"><b>Healing</b></span><br />
+<b>Healing</b> - First Aid gives some reasonable healing with base attributes of Inteligence (75%) and Perception (25%).<br /> 
+The Empathic mutation line also supplies single target healing abilities. Charisma (75%) Willpower (25%)<br />
+The mutation line Nano-Manipulation supplies some group based healing abilities. Intelligence (75%) Willpower (25%)<br />
+<br />
+<span style="color: yellow"><b>Other Skills</b></span><br />
+<b>Dirty Tricks</b> - The is a PvP orientated skill, but can also aid in PvE with its debuffs. You'll need Dexterity (50%) and Coordination (50%) to maximize this one. Some people get this to just 33 points to get Dirty Steel, which is a useful PvE stun.<br />
+<b>Escape Artist</b> - Another PvP orientated skill, this one defensive based. You'll need Dexterity (50%) and Coordination (50%) to maximize this one. This ability also grants 'stealth', which gives an increased chance to NOT appear on your opponenents radar in PvP. This isn't true stealth, and can be seen through with a high Perception.<br />
+<b>Group Tactics</b> - This is a support/group based skillset, based upon Coordination (25%) Intelligence (75%)<br /> 
+<b>Heavy Weapon</b> - This isn't available till around level 40. Gives access to heavy weapons, and isn't currently that popular. Perception (50%) Strength (50%)<br />
+<b>Social</b> - Good for trading characters as the financial benfits are high. Charisma (75%) Perception (25%)<br />
+<br />
+<span style="color: yellow"><b>Mutations</b></span><br />
+These are support skills that compliment your build, and will unlikely be your primary attacks/abilities.<br />
+<br />
+In general, it is suggested to take 1-3 mutation lines, depending on how much AP you have left. The lines to take should really be the ones that you already have attributes for.<br />
+<br />
+The secondary attribute for all mutations is Willpower (25%). This attribute is usually only raised for a heavy mutation builds, which tend to be support/group characters.<br />
+<br />
+<span style="color: yellow"><b>Transport</b></span><br />
+It is also worth noting that to use vehicles in the game, you need to have the required attributes.<br />
+<br />
+Animal mounts require an increasing amount of Nature ability. This is a sub-skill of Crafting.<br />
+ATV's, Cars and Bikes require Coordination<br />
+Buggies require Dexterity<br /> 
+<br />
+<span style="color: yellow"><b>Buff Slots</b></span><br />
+There are a number of different buffs that a character can have. They fall into a number of categories, and within each category, you can only have one buff active at a time. There categories are:<br />
+<ul>
+<li>Aura</li>
+<li>Stance</li>
+<li>Toggle</li>
+<li>Science/Nature/Mutagenics/Medicine</li>
+<li>Food - Consumables</li>
+<li>Drink - Consumables</li>
+<li>Tent - See Construction</li>
+</ul>
+It is worth trying to ensure that you have a buffs from each of the categories available in your build.<br />
+      </div>
+    </div>
+</div><div class="garagemapbox" id="garagemapbox" style="overflow: hidden"><div class="closeX" onclick="javascript:close_sub_window('garagemapbox')">X</div>    <div style="padding: 0 5px; float: left; width: 280px; text-align: left; ">
+      <span class="sub_window_header">Garage Map<br /><br /></span>
+      <img src="images/garagemap.png" alt="S1 Garage Map" />
+    </div>
+</div>
+
+
+<div class="craftingbox" id="craftingbox" style="overflow: hidden"><div class="closeX" onclick="javascript:close_sub_window('craftingbox')">X</div>    <div style="padding: 0 5px; width: 896px; text-align: left; font-size: 80%;">
+      <span class="sub_window_header">Crafting/Tradeskills<br /><br /></span>
+<div style="overflow: scroll; height: 510px; ">
+<b><span style="color: yellow">What is crafting?</span></b><br />
+Crafting in FE is done by taking raw materials (scavenged or bought) and turning that into a finished item after waiting for an amount of set time. The best armor/weapons and all types of vehicles (Horse/ATV/Buggies etc) will be made with crafting...thus making it essential to be involved with crafting in some way. Even if it is just crafting your own ammo, get involved with the crafting system. Pretty much every item in the game can be created with crafting.
+<br /><br /><b><span style="color: yellow">A list of the different tradeskills available:</span></b><br />
+<ul>
+<li><b><a href="http://fallen-earth.ru/armorcraft" target="_blank">Armorcraft</a></b>:Covers the making of armor and clothes.</li>
+<li><b><a href="http://fallen-earth.ru/Ballistic" target="_blank">Ballistics</a></b>:Covers the creation of rifles and pistols, from zip guns and crossbows to sub-machine guns and assault rifles.</li>
+<li><b><a href="http://fallen-earth.ru/Construction" target="_blank">Construction</a></b>: Build camps that can provide merchants, buffs, mailboxes, vaults, and activity areas.</li>
+<li><b><a href="http://fallen-earth.ru/Cooking" target="_blank">Cooking</a></b>:Covers the preparation of food, which can provide a number of recovery-oriented buffs.</li>
+<li><b><a href="http://fallen-earth.ru/NGS" target="_blank">Geology</a></b>:Allows the player to harvest minerals from mining nodes and to refine metals into higher-grade components.</li>
+<li><b><a href="http://fallen-earth.ru/Medicine" target="_blank">Medicine</a></b>:Covers the creation of all manner of medical equipment.</li>
+<li><b><a href="http://fallen-earth.ru/Mutagenics" target="_blank">Mutagenic</a></b>:Covers the creation of mutation injectors and other devices that support the use of mutations, such as gamma restorers.</li>
+<li><b><a href="http://fallen-earth.ru/NGS" target="_blank">Nature</a></b>:Allows the character to harvest components from animals and plants in addition to producing some items and refine some components. You create/train Horses with this Tradeskill.</li>
+<li><b><a href="http://fallen-earth.ru/Science" target="_blank">Science</a></b>:Covers the creation of chemical boosters, special optics, Ammunition, Motorised Vehicles, and similarly advanced items. Also allows the refinement of some components.</li>
+<li><b><a href="http://fallen-earth.ru/Weaponcraft" target="_blank">Weaponry</a></b>:Covers the creation of melee weapons.</li>
+</ul>
+<br />In addition to those, there are three gathering skills; Scavenging, Nature, Geology. These are the main skills used to harvest resources.<br /><br />
+It is possible to master all Tradeskills, as you are able to craft everything, however mastering all Tradeskills will be a time-consuming task. For starting off it is recommended to stick with one or two Tradeskills that complement each other E.g. Ballistics and Science. As a crafter you should also be focusing on all of the gathering Tradeskills plus your one or two crafting paths.
+<br /><br /><b><span style="color: yellow">How to level up tradeskills</span></b><br />
+Using Tradeskills (actually making things) improves them. As you use them they go up and you also earn Experience Points - if you are making something that is a challenge to you. The experience points gained by crafting alone are not very high, though, compared to other activities. People can be crafting while doing other things, and this has been taken into account with the experience gained from it. Players who just sit in a crafting facility and make things all the time are not going to advance quickly, as they are risking nothing, but they can do so if they want to.<br /><br />
+If you use a tradeskill to make an item close to your level, you earn experience points (based on your level compared to the level of the item) and the tradeskill goes up, usually by one point. If the item is not close to your level, you get no experience and the tradeskill does not go up.<br /><br />
+The color of the recipe name indicates what you will gain from making it:<br /><br />
+<ul>
+<li><b>Red: </b>You do not have the skill level needed to make these recipes.</li>
+<li><b>White: </b>Making these recipes guarantees some skill points and decent XP.</li>
+<li><b>Green: </b>You will still gain skill, but the amount of XP you get is minimal </li>
+<li><b>Gray: </b>These recipes no longer provide XP or skill because they are way below you current skill level.</li>
+</ul>
+<br />The maximum skill level in each of the tradeskills is limited by a character's Intelligence and Perception stats.<br />
+<br /><b><span style="color: yellow">When you can craft</span></b><br />
+Players can craft items while online or offline, however, there is a limit to how much you can queue up at a time (20 Items), so players won't be able to make massive lists of items and then leave for a week. Even huge things like cars will be built from multiple components, so players will have to check in regularly time and form new queues if they want to keep crafting.<br /><br />
+You can also craft whilst leveling/questing/exploring, however, whilst you are outside of the relevant crafting facility, recipes will take a while longer to make.
+<br /><br /><span style="color: yellow"><b>Getting Components</b></span><br />
+Basically players will collect components from scavenging, harvesting minerals, plants, or animals, salvaging existing items, or from creature drops. Scavenging and harvesting plants and minerals will be done by interacting with nodes that spawn in appropriate areas throughout the world. These can vary from special mutant cacti that produce healing salves to getting bits of rubber from piles of old tires. Creatures can be skinned to get items such as leather, meat, bone, toxins (giant spiders!), or acid (giant ants!).
+<br /><br /><span style="color: yellow"><b>Getting Recipes</b></span><br />
+Characters do not learn individual recipes in Fallen Earth; instead they learn groups of recipes called Knowledges. Each Tradeskill Knowledge has one or more related recipes that the player learns when they acquire the knowledge. For example if you learn Axe, a Weaponry Knowledge, you'll learn to make a number of axes with different abilities. If you learn T-Shirt, an Armorcraft Knowledge, you'll learn a number of different T-Shirt recipes, each of a different color so you can customize your appearance. Each recipe requires a different list of components.<br /><br />
+Knowledges can be gained from four different sources:<br /><br />
+<ul>
+<li><b>Missions: </b>Some missions will provide Knowledges as a reward. These are normally special Knowledges that can only be gained through that
+mission. These are spread throughout the game with at least one in every town (we are going to have literally hundreds of towns over the course of the
+game), so if you want to learn every last crafting recipes for a given skill, it will take a lot of travel. </li>
+<li><b>Merchants: </b>Merchants in towns will sell books that teach common, readily available knowledges. Not all Knowledges will be available at
+all trainers (good luck finding a well-supplied Science trainer in a CHOTA town). </li>
+<li><b>Treasure Books: </b>These can be found on some mobs, such as crazy technology-worshiping cultists, or in containers that players discover. </li>
+<li><b>Teaching: </b>Players can create a recipe book to give or sell to other players. </li>
+</ul><br />
+<a href="http://fallen-earth.ru/guide_craft" target="_blank">Crafters Guide (Russian language)</a><br /><br />
+
+
+</div>
+    </div>
+</div><div class="predefinedbuildsbox" id="predefinedbuildsbox" style="overflow: hidden"><div class="closeX" onclick="javascript:close_sub_window('predefinedbuildsbox')">X</div>    <div style="padding: 0 5px; float: left; width: 695px; text-align: left; line-height: 13px;">
+    <span class="sub_window_header">Pre-Defined Builds<br /><br /></span>
+    <div style="font-size: 11px; overflow: scroll; padding: 0 5px; height: 491px;">
+All builds here really horrible looks - ton of wasting APs and many common mistakes. And no one of this builds corrects for patch 3.2. Sometime i add here my builds from site, but now - just don't use this builds. Andrew Leslie.<br /><br />
+It is possible to 'respec' in the game. However, to do this you will need to purchase (with Reward or G1 points) an injector to allow you to do so. As such, you should to be sure of your build before you start along its path. Head over to the official forums to discuss your builds and get feedback on it if you are unsure of anything!<br /><br />
+I do not accept any liability for any builds your implement from this list!<br /><br />
+Clicking on a build link will update the page immediately without needing to reload.<br /><br />
+Submit your builds for this list using <a href="mailto:andrleslie@gmail.com?subject=Planner%20Build&amp;body=Build%20Link:&amp;body=APs%20Used:&amp;body=Your%20Nickname:&amp;body=Build%20Description:">this link</a><br /><br />
+<table border="1" cellspacing="0" cellpadding="0" class="predefined"><tr><td style="width: 60px; "><span style="color: yellow"><b>Build Link</b></span></td><td style="width: 40px; text-align: center; "><span style="color: yellow"><b>Level</b></span></td><td style="width: 100px; "><span style="color: yellow"><b>Author</b></span></td><td style="width: 480px; "><span style="color: yellow"><b>Description</b></span></td></tr><tr><td style="text-align: center"><a href="javascript:show_build('#370000416241414141624101010101010101C40101010101018201010101010101010101')">Link</a></td><td style="text-align: center"><span style="color: #DFF7F7">55</span></td><td><span style="color: #DFF7F7">Psychic</span></td><td><span style="color: #DFF7F7">Starter Template: Melee</span></td></tr><tr><td style="text-align: center"><a href="javascript:show_build('#370000416241416262624101010101010101C40101010101018201010101010101010101')">Link</a></td><td style="text-align: center"><span style="color: #AFC7C7">55</span></td><td><span style="color: #AFC7C7">Psychic</span></td><td><span style="color: #AFC7C7">Starter Template: Melee + Crafting</span></td></tr><tr><td style="text-align: center"><a href="javascript:show_build('#37000041416241416241410101010101010101010101C401018201010101010101010101')">Link</a></td><td style="text-align: center"><span style="color: #DFF7F7">55</span></td><td><span style="color: #DFF7F7">Psychic</span></td><td><span style="color: #DFF7F7">Starter Template: Rifle</span></td></tr><tr><td style="text-align: center"><a href="javascript:show_build('#37000041416241626241410101010101010101010101C401018201010101010101010101')">Link</a></td><td style="text-align: center"><span style="color: #AFC7C7">55</span></td><td><span style="color: #AFC7C7">Psychic</span></td><td><span style="color: #AFC7C7">Starter Template: Rifle + Crafting</span></td></tr><tr><td style="text-align: center"><a href="javascript:show_build('#37000041416241416241410101010101010101C401010101018201010101010101010101')">Link</a></td><td style="text-align: center"><span style="color: #DFF7F7">55</span></td><td><span style="color: #DFF7F7">Psychic</span></td><td><span style="color: #DFF7F7">Starter Template: Pistol</span></td></tr><tr><td style="text-align: center"><a href="javascript:show_build('#37000041416241626241410101010101010101C401010101018201010101010101010101')">Link</a></td><td style="text-align: center"><span style="color: #AFC7C7">55</span></td><td><span style="color: #AFC7C7">Psychic</span></td><td><span style="color: #AFC7C7">Starter Template: Pistol + Crafting</span></td></tr><tr><td style="text-align: center"><a href="javascript:show_build('#37000041416241416241410101010101010101C40101C401018201010101010101010101')">Link</a></td><td style="text-align: center"><span style="color: #DFF7F7">55</span></td><td><span style="color: #DFF7F7">Psychic</span></td><td><span style="color: #DFF7F7">Starter Template: Rifle/Pistol</span></td></tr><tr><td style="text-align: center"><a href="javascript:show_build('#37000041416241626241410101010101010101C40101C401018201010101010101010101')">Link</a></td><td style="text-align: center"><span style="color: #AFC7C7">55</span></td><td><span style="color: #AFC7C7">Psychic</span></td><td><span style="color: #AFC7C7">Starter Template: Rifle/Pistol + Crafting</span></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;nbsp;</td><td>&nbsp;</td></tr><tr><td style="text-align: center"><a href="javascript:show_build('#1E0004283C283C28283C2878013901423C017801333F010101504B010101010101010101')">Link</a></td><td style="text-align: center"><span style="color: #AFC7C7">30</span></td><td><span style="color: #AFC7C7">NiuqOteen</span></td><td><span style="color: #AFC7C7">LVL 30 Melee build</span></td></tr><tr><td style="text-align: center"><a href="javascript:show_build('#1E00002B3C283C28283C2878016401420101780101010101015051540101010101010101')">Link</a></td><td style="text-align: center"><span style="color: #DFF7F7">30</span></td><td><span style="color: #DFF7F7">NiuqOteen</span></td><td><span style="color: #DFF7F7">LVL 30 Melee Sans power / precision</span></td></tr><tr><td style="text-align: center"><a href="javascript:show_build('#1E000028283C353C3C282863013901423C010101013F780101504B010101010101010101')">Link</a></td><td style="text-align: center"><span style="color: #AFC7C7">30</span></td><td><span style="color: #AFC7C7">NiuqOteen</span></td><td><span style="color: #AFC7C7">LVL 30 Rifle Crafter</span></td></tr><tr><td style="text-align: center"><a href="javascript:show_build('#0A000014141E161B1E14142B010101240101010101013C01012801010101010101010101')">Link</a></td><td style="text-align: center"><span style="color: #DFF7F7">10</span></td><td><span style="color: #DFF7F7">NiuqOteen</span></td><td><span style="color: #DFF7F7">LVL 10 Rifle Crafter</span></td></tr><tr><td style="text-align: center"><a href="javascript:show_build('#1E000028283C353C3C282863013901423C010178013F010101504B010101010101010101')">Link</a></td><td style="text-align: center"><span style="color: #AFC7C7">30</span></td><td><span style="color: #AFC7C7">NiuqOteen</span></td><td><span style="color: #AFC7C7">LVL 30 Pistol Crafter</span></td></tr><tr><td style="text-align: center"><a href="javascript:show_build('#1E00003C283C283C3C28280101010101010101780101017801504B5A0163010101010101')">Link</a></td><td style="text-align: center"><span style="color: #DFF7F7">30</span></td><td><span style="color: #DFF7F7">NiuqOteen</span></td><td><span style="color: #DFF7F7">LVL 30 Group Healer/ Crafter / Pistols</span></td></tr><tr><td style="text-align: center"><a href="javascript:show_build('#1E000328283C3C283C2828635D0101013C0101783F64010101504B010101010101010101')">Link</a></td><td style="text-align: center"><span style="color: #AFC7C7">30</span></td><td><span style="color: #AFC7C7">NiuqOteen</span></td><td><span style="color: #AFC7C7">LVL 30 Pistols (No begging for ammo!)</span></td></tr><tr><td style="text-align: center"><a href="javascript:show_build('#1E0009283C283C28323C2878016401013C01780101015A0101504B010101010101010101')">Link</a></td><td style="text-align: center"><span style="color: #DFF7F7">30</span></td><td><span style="color: #DFF7F7">NiuqOteen</span></td><td><span style="color: #DFF7F7">LVL 30 Melee with rifle support</span></td></tr><tr><td style="text-align: center"><a href="javascript:show_build('#280009324B324B32374B3296018201603C0196010133690101645D010101010101010101')">Link</a></td><td style="text-align: center"><span style="color: #AFC7C7">40</span></td><td><span style="color: #AFC7C7">NiuqOteen</span></td><td><span style="color: #AFC7C7">LVL 40 Melee with rifle support</span></td></tr><tr><td style="text-align: center"><a href="javascript:show_build('#1E00093C283C283C3C28285001010101010101010101017801505D5A0101010101010101')">Link</a></td><td style="text-align: center"><span style="color: #DFF7F7">30</span></td><td><span style="color: #DFF7F7">NiuqOteen</span></td><td><span style="color: #DFF7F7">LVL 30 Crafter/ranged with Full discounts (max social)</span></td></tr></table><br /></div></div></div>
+
+
+<div class="fansitebox" id="fansitebox" style="overflow: hidden"><div class="closeX" onclick="javascript:close_sub_window('fansitebox')">X</div>    <div style="padding: 0 5px; float: left; width: 695px; text-align: left; ">
+      <span class="sub_window_header">Fan Sites</span><br /><br />
+      <div style="font-size: 12px; width: 590px; height: 483px; overflow: auto; line-height: 15px;">
+<table border="1" cellspacing="0" cellpadding="0" class="predefined"><tr><td style="width: 120px; "><span style="color: yellow"><b>Linked Name</b></span></td><td style="width: 430px; "><span style="color: yellow"><b>Description</b></span></td></tr><tr><td><a href="http://fallenearth.info/">FallenEarth Info</a></td><td><span style="color: #DFF7F7">A new work-in-progress fan site.</span></td></tr><tr><td><a href="http://fallenearth.wikia.com/wiki/Main_Page">Fallen Earth Wiki</a></td><td><span style="color: #AFC7C7">A community Wiki for FE. A little dated.</span></td></tr><tr><td><a href="http://www.globaltechatlas.info/">GlobalTechAtlas</a></td><td><span style="color: #DFF7F7">An old site, but still containing a lot of valid information.</span></td></tr><tr><td><a href="http://www.facebook.com/fallenearthgame">FE on Facebook</a></td><td><span style="color: #AFC7C7">The official Facebook page for Fallen Earth, the post-apocalyptic MMO from GamersFirst.</span></td></tr><tr><td><a href="http://www.tentonhammer.com/fallenearth">Ten Ton Hammer</a></td><td><span style="color: #DFF7F7">MMO Gaming Site - Fallen Earth pages</span></td></tr><tr><td><a href="http://twitter.com/fallenearth">Fallen Earth Twitter</a></td><td><span style="color: #AFC7C7">The official Fallen Earth Twitter page...Welcome to the Apocalypse!</span></td></tr><tr><td><a href="http://kb.fallenearth.com/">Knowledge Base</a></td><td><span style="color: #DFF7F7">The official Fallen Earth knowledge base.</span></td></tr><tr><td><a href="http://febase.mmometaguide.com">Fallen Earth Base</a></td><td><span style="color: #AFC7C7">Forum, Guides, Builds & Blogs.</span></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr></table><br />      If you want your fan-site, blog, wiki, clan, or any other Fallen Earth related site listed here, please let me know using <a href="mailto:psychic@sleeping-dragons.co.uk?subject=Planner%20Build&amp;body=Fan%20Site%20Name:&amp;body=Site%20Link/URL:&amp;body=Short%20Description:&amp;">this link</a>
+      </div>
+    </div>
+</div>
+
+  <!-- End Toggle Windows -->    
+
+<!-- Footer Start -->
+    <div class="footer">
+      <a href="http://www.anybrowser.org/campaign/" onclick="window.open(this.href);return false;">
+        <img src="images/anybrowser.gif" alt="Viewable in Any Browser" height="15" width="80" /></a>
+      <a href="http://validator.w3.org/check?uri=referer" onclick="window.open(this.href);return false;">
+        <img src="images/valid-xhtml10.png" alt="Valid XHTML 1.0 Strict" height="15" width="80" /></a>
+      <a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3" onclick="window.open(this.href);return false;">
+        <img src="images/validcss.gif" alt="Valid CSS3" height="15" width="80" /></a>
+      <a href="http://www.php.net" onclick="window.open(this.href);return false;">
+        <img src="images/php.png" alt="PHP" height="15" width="80" /></a>
+      <a href="http://www.w3schools.com/jsref/default.asp" onclick="window.open(this.href);return false;">
+        <img src="images/javascript.png" alt="PHP" height="15" width="80" /></a>
+
+
+        <br />
+
+</div>
+ 
+<!-- End Footer -->
+<a title="Web Statistics" href="http://clicky.com/100992531"><img alt="Web Statistics" src="//static.getclicky.com/media/links/badge.gif" border="0" /></a>
+<script src="//static.getclicky.com/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(100992531); }catch(e){}</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100992531ns.gif" /></p></noscript>
+<div class="no_cookies" id="no_cookies">Please enable cookies to use this site</div>
+<!-- Body End --> 
+  </body>
+</html>
+

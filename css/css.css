@@ -1,0 +1,108 @@
+body { border: 0; padding: 0; margin: 0; background-color: #000000; color: white; font-size: 14px; font-family: Verdana; }
+
+.main { position: relative; height: 17px; width: 400px; }
+
+/* gauges */
+.common { position: absolute; background-color: #AFC7C7; line-height: 16px; font-size: 12px; text-align: center; }
+.label  { top: 0px; left:   0px; height: 16px; width: 125px; text-align: left; }
+.min    { top: 0px; left: 125px; height: 16px; width:  20px; color: #909090; text-align: right; text-shadow: 0 0 0; }
+.minus  { top: 0px; left: 145px; height: 16px; width:  15px; background-image: url('../images/left.png'); }
+.bar    { top: 0px; left: 160px; background-image: url('../images/bg.png'); height: 16px; text-align: left; background-color: #808080; }
+.gauge  { position: relative; background-image: url('../images/rb.png'); width: 0px; height: 16px; }
+.plus   { top: 0px; right: 55px; height: 16px; width:  15px; background-image: url('../images/right.png'); }
+.max    { top: 0px; right: 29px; height: 16px; width:  26px; color: #909090; text-align: left; text-shadow: 0 0 0; }
+.value  { top: 0px; right:  0px; height: 16px; width:  29px; font-weight: bold; text-align: right; color: #004000; text-shadow: #00FF00 1px 1px 0; } 
+
+.gaugeframe { border: 2px ridge #6F8787; width: 404px; background-color: #AFC7C7; } /* #e6e6e6; */
+.gaugeframeheader { font-weight: bold; line-height: 17px; }
+
+/* Description Panels */
+.descriptionpanel { position: absolute; padding: 0; margin: 0; left: 408px; width: 584px; border: 2px ridge #6F8787; line-height: 17px; font-size: 9px; background-color: #8FA7A7; color: black; }
+.descriptionpanelheader { font-weight: bold; font-size: 18px; }
+.characterdescription { top: 0px; height: 51px; text-align: center; }
+.attributedescription { top: 55px; height: 153px; }
+.skilldescription { top: 212px; height: 255px; }
+.mutationdescription { top: 471px; height: 204px; }
+
+.sm { font-size: 12px; }
+.lg { font-size: 18px; color: #800080; text-shadow: #C000C0 1px 1px 0px; }
+.details { color: #000000; text-shadow: #C0C0A0 1px 1px 1px; font-size: 18px; }
+.detailsheader { font-size: 17px; text-shadow: #A0A0C0 1px 1px 1px; color: #000080 }
+.skills { color: #000000; text-shadow: #A0C0A0 1px 1px 1px; font-size: 18px; }
+.mutations { color: #000000; text-shadow: #C0A0A0 1px 1px 1px; font-size: 18px; }
+
+/*     txt += wrap_text('<span style="color: #FF0000; text-shadow: #800000 1px 1px 1px;">' + (ap_avail - ap_spent) + " AP</span>", "lg");*/
+.abilitynamegot    { color: #004000; text-shadow: #00FF00 1px 1px 1px; font-size: 16px; font-weight: bold; }
+.abilitynamenot    { color: #A00000; text-shadow: #E0C0C0 1px 1px 1px; font-size: 16px; font-weight: bold; }
+.abilitydesc    { color: black; }
+.abilityrankgot { color: #004000; text-shadow: #00FF00 1px 1px 1px; font-size: 14px; }
+.abilityranknot { color: #A00000; text-shadow: #E0A0A0 1px 1px 1px; font-size: 12px;}
+
+a { color: white; }
+.footer { text-align: center; font-size: 70%; width: 930px; }
+
+/* Error message for no javascript */
+.alert             {  position: absolute; background: #fff6bf url("../images/exclam.gif") center no-repeat; background-position: 5px 50%; top: 0px; left: 0px; z-index: 10; width: 930px;
+                      text-align: left; padding: 17px 20px 17px 45px; border-top: 2px solid #ff0000; border-bottom: 2px solid #ff0000; color: red; } 
+                 
+.no_cookies        {  position: absolute; background: #fff6bf url("../images/exclam.gif") center no-repeat; background-position: 5px 50%; top: 0px; left: 0px; z-index: 10; width: 930px;
+                      text-align: left; padding: 17px 20px 17px 45px; border-top: 2px solid #ff0000; border-bottom: 2px solid #ff0000; color: red; }  
+
+.linkbar { position: relative; width: 992px; border: 2px ridge #6F8787; background-color: #606060; text-align: center; font-size: 70%; line-height: 14px; }                      
+
+.aboutbox { position: absolute; top: 100px; left: 260px; width: 472px; height: 325px; border: 2px ridge white; background-color: #606060; text-align: center; }
+.closeX { position: absolute; top: -1px; right: 1px; width: 10px; height: 10px; cursor: pointer; text-align: center; color: red; font-weight: bold; }
+.option { position: absolute; top: -1px; left: 1px; width: 200px; height: 10px; cursor: pointer; text-align: left; color: red; font-weight: bold; font-size: 80%; }
+.option a { color: red; }
+.startertownsbox { position: absolute; top: 25px; left: 235px; width: 550px; height: 640px; border: 2px ridge white; background-color: #606060; text-align: center; visibility: hidden; }
+.factionwheelbox { position: absolute; top: 100px; left: 100px; width: 800px; height: 500px; border: 2px ridge white; background-color: #606060; text-align: center; visibility: hidden; }
+.townlevelsbox { position: absolute; top: 100px; left: 100px; width: 800px; height: 355px; border: 2px ridge white; background-color: #606060; text-align: center; visibility: hidden; }
+.banklocationsbox { position: absolute; top: 100px; left: 100px; width: 800px; height: 320px; border: 2px ridge white; background-color: #606060; text-align: center; visibility: hidden; }
+.fasttravelbox { position: absolute; top: 100px; left: 100px; width: 800px; height: 500px; border: 2px ridge white; background-color: #606060; text-align: center; visibility: hidden; }
+.creationguidebox { position: absolute; top: 100px; left: 150px; width: 700px; height: 500px; border: 2px ridge white; background-color: #606060; text-align: center; visibility: hidden; }
+.predefinedbuildsbox { position: absolute; top: 100px; left: 150px; width: 700px; height: 500px; border: 2px ridge white; background-color: #606060; text-align: center; visibility: hidden; }
+.summarybox { position: absolute; top: 100px; left: 100px; width: 800px; height: 500px; border: 2px ridge white; background-color: #606060; text-align: center; visibility: hidden; }
+.transportbox { position: absolute; top: 50px; left: 50px; width: 900px; height: 600px; border: 2px ridge white; background-color: #606060; text-align: center; visibility: hidden; }
+.garagemapbox { position: absolute; top: 30px; left: 150px; width: 610px; height: 640px; border: 2px ridge white; background-color: #606060; text-align: center; visibility: hidden; }
+.capstonesbox { position: absolute; top: 100px; left: 50px; width: 900px; height: 520px; border: 2px ridge white; background-color: #606060; text-align: center; visibility: hidden; }
+.abilitylistbox { position: absolute; top: 100px; left: 50px; width: 900px; height: 520px; border: 2px ridge white; background-color: #606060; text-align: center; visibility: hidden; }
+
+.craftingbox { position: absolute; top: 100px; left: 50px; width: 900px; height: 520px; border: 2px ridge white; background-color: #606060; text-align: center; visibility: hidden; }
+.bonusapbox { position: absolute; top: 100px; left: 200px; width: 600px; height: 500px; border: 2px ridge white; background-color: #606060; text-align: center; visibility: hidden; }
+.fansitebox { position: absolute; top: 100px; left: 200px; width: 600px; height: 500px; border: 2px ridge white; background-color: #606060; text-align: center; visibility: hidden; }
+
+.sub_window_header { font-weight: bold; color: yellow; font-size: 100%; }
+
+li { margin-bottom: 0px; margin-top: 0px; }
+ul { margin-bottom: 0px; margin-top: 0px; }
+
+.summary_header { color: yellow; }
+.summary_text { color: white; padding: 5px; word-wrap: break-word; overflow: auto; height: 473px; }
+
+img { border: 0; }
+.hr-div {
+    /* no need for border-left/right with the following: */
+    border: none;
+    border-bottom:1px solid #808080; 
+    border-top:1px solid #6F8787; 
+    clear:both; 
+    height:0; 
+    width: 100%;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+table { border-collapse:collapse; }
+
+.animals { font-size: 10px;  line-height: 12px; visibility: hidden; }
+.animals td { padding: 0 5px; }
+.vehicles { font-size: 10px;  line-height: 12px; visibility: hidden; }
+.vehicles td { padding: 0 5px; }
+
+.predefined td { padding: 0 5px; font-size: 90%; }
+
+.startbutton { position: absolute; left: 1px; top: 681px; width: 102px; height: 28px; background-image: url('../images/start.png'); }
+.summarybutton { position: absolute; left: 892px; top: 681px; width: 102px; height: 28px; background-image: url('../images/summary.png'); }
+.ibutton { position: absolute; left: 66px; top: 25px; width: 18px; height: 18px; background-image: url('../images/i.png'); }
+
+.import_reload { position: absolute; left: 200px; top: 2px; width: 18px; height: 18px; font-size: 12px; }
