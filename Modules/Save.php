@@ -1,0 +1,1 @@
+<script language="javascript">self.location.href='http://planner.lecartel.fr?toon=Characttester Name#0100280B0B0B0B0B0B0B0B01010101010101010101010101161601010101010101010101'</script>
