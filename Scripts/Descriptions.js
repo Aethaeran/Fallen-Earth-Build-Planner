@@ -69,7 +69,7 @@ function display_character() {
 	Texte += '<tr style="height: 1px;"></tr><tr>';
 	
 	Texte += '<td class="Button"><input type="Submit" value="Save" onclick="javascript:addBookmark(\''+ Pseudo +'\',\''+ document.URL +'\')"/><input type="hidden" name="Hash" value="'+ Hash +'"/></td>';
-	Texte += '<td class="Button2"><input type="Button" value="Reset" onclick="self.location.href=\'http://planner.lecartel.fr\'" /></td></tr></table></form>';
+	Texte += '<td class="Button2"><input type="Button" value="Reset" onclick="self.location.href=\'http://aethaeran.github.io/Fallen-Earth-Build-Planner\'" /></td></tr></table></form>';
 	
 	Texte += '<table cellspacing="0" id="Stats"><tr><td class="Icon"><img src="Graphics/Icons/Total.png"/></td><td>Total</td>';		
 	Texte += '<td class="DescV"><strong>'+ ap_avail +'</strong></td></tr>';
