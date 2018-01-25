@@ -1,1 +1,1 @@
-<script language="javascript">self.location.href=</script>
+<script language="javascript">self.location.href=self.location.href</script>
