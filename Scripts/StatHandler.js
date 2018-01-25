@@ -70,7 +70,7 @@ function check_attribute(s1, pc1, s2, pc2, num)
 {
   var min_value = 1;
   // Changed formula to correct values : Confirmed by email from devs!
-  var max_value = Math.round((st_stats[s1] * pc1) + (st_stats[s2] * pc2)) * 2;
+  var max_value = Math.round(((st_stats[s1] * pc1) + (st_stats[s2] * pc2)) * 2);
   var cur_value = st_stats[num];
   
   if (cur_value < min_value)  cur_value = min_value;
@@ -84,7 +84,7 @@ function check_attribute(s1, pc1, s2, pc2, num)
   st_stats[num] = cur_value;
   window["g" + num].setAll(min_value, max_value, cur_value, true);
   
-  if ((num != ALPHA) && (num != CRAFT)) // don't spend AP on alpha
+  if ((num != ALPHA) && (num != CRAFT)) // don't spend AP on alpha or crafting
   {
     ap_spent += parseInt((st_stats[num] - min_value), 10);
   }

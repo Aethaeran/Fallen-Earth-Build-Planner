@@ -1,0 +1,608 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" >
+
+	<head>
+		<title>Le Cartel - Planner</title>		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+		<link rel="stylesheet" href="CSS/Planner.css" />
+		<link rel="icon" type="image/png" href="Graphics/favicon.png"/>
+
+		<script type="text/javascript" src="Scripts/Gauge.js"></script>
+		<script type="text/javascript" src="Scripts/Link.js"></script>
+		<script type="text/javascript" src="Scripts/Cookies.js"></script>
+		<script type="text/javascript" src="Scripts/StatHandler.js"></script>
+		<script type="text/javascript" src="Scripts/Descriptions.js"></script>
+		<script type="text/javascript" src="Scripts/Windows.js"></script>
+		<script type="text/javascript" src="Scripts/SkillList.js"></script>
+		<script type="text/javascript" src="Scripts/Summary.js"></script>
+		<script type="text/javascript" src="Scripts/SortTable.js"></script>
+	</head>
+	
+	<body  onload="javascript: decode_link();">
+		<div id="Body">
+		
+			<div class="GaugeFrame">
+	<table id="Planner" cellspacing="0">
+		
+		
+					<script type="text/javascript">var g0 = new Gauge(
+					0, 1, 1, 55)</script>
+					<tr id="main0" class="main">
+						<td class="Icon"><img src="Graphics/Icons/Level.png" /></td>
+						<td id="label0" class="Label" onclick="showdescription(0)">Level</td>
+						<td id="min0"   class="Minimum" onclick="setmin(0); showdescription(0)">1</td>
+						<td id="minus0" class="Decrease" onclick="lower(0); showdescription(0)"></td>
+						<td id="bar0"   class="GaugeBG" style="width: 170px;" onclick="clickit(event, 0); showdescription(0)">
+							<div id="gauge0" class="Gauge"></div>
+						</td>
+						<td id="plus0"  class="Increase" onclick="raise(0); showdescription(0)"></td>
+						<td id="max0"   class="Maximum" onclick="setmax(0); showdescription(0)">55</td>
+						<td id="value0" class="Value">1</td>
+					</tr>
+					<script type="text/javascript">var g1 = new Gauge(
+					1, 0, 0, 40)</script>
+					<tr id="main1" class="main">
+						<td class="Icon"><img src="Graphics/Icons/Bonus APs.png" /></td>
+						<td id="label1" class="Label" onclick="showdescription(1)">Bonus APs</td>
+						<td id="min1"   class="Minimum" onclick="setmin(1); showdescription(1)">0</td>
+						<td id="minus1" class="Decrease" onclick="lower(1); showdescription(1)"></td>
+						<td id="bar1"   class="GaugeBG" style="width: 170px;" onclick="clickit(event, 1); showdescription(1)">
+							<div id="gauge1" class="Gauge"></div>
+						</td>
+						<td id="plus1"  class="Increase" onclick="raise(1); showdescription(1)"></td>
+						<td id="max1"   class="Maximum" onclick="setmax(1); showdescription(1)">40</td>
+						<td id="value1" class="Value">0</td>
+					</tr>		
+		<tr style="height: 15px;"></tr>
+
+		
+					<script type="text/javascript">var g2 = new Gauge(
+					2, 11, 11, 17)</script>
+					<tr id="main2" class="main">
+						<td class="Icon"><img src="Graphics/Icons/Charisma.png" /></td>
+						<td id="label2" class="Label" onclick="showdescription(2)">Charisma</td>
+						<td id="min2"   class="Minimum" onclick="setmin(2); showdescription(2)">11</td>
+						<td id="minus2" class="Decrease" onclick="lower(2); showdescription(2)"></td>
+						<td id="bar2"   class="GaugeBG" style="width: 170px;" onclick="clickit(event, 2); showdescription(2)">
+							<div id="gauge2" class="Gauge"></div>
+						</td>
+						<td id="plus2"  class="Increase" onclick="raise(2); showdescription(2)"></td>
+						<td id="max2"   class="Maximum" onclick="setmax(2); showdescription(2)">17</td>
+						<td id="value2" class="Value">11</td>
+					</tr>
+					<script type="text/javascript">var g3 = new Gauge(
+					3, 11, 11, 17)</script>
+					<tr id="main3" class="main">
+						<td class="Icon"><img src="Graphics/Icons/Coordination.png" /></td>
+						<td id="label3" class="Label" onclick="showdescription(3)">Coordination</td>
+						<td id="min3"   class="Minimum" onclick="setmin(3); showdescription(3)">11</td>
+						<td id="minus3" class="Decrease" onclick="lower(3); showdescription(3)"></td>
+						<td id="bar3"   class="GaugeBG" style="width: 170px;" onclick="clickit(event, 3); showdescription(3)">
+							<div id="gauge3" class="Gauge"></div>
+						</td>
+						<td id="plus3"  class="Increase" onclick="raise(3); showdescription(3)"></td>
+						<td id="max3"   class="Maximum" onclick="setmax(3); showdescription(3)">17</td>
+						<td id="value3" class="Value">11</td>
+					</tr>
+					<script type="text/javascript">var g4 = new Gauge(
+					4, 11, 11, 17)</script>
+					<tr id="main4" class="main">
+						<td class="Icon"><img src="Graphics/Icons/Dexterity.png" /></td>
+						<td id="label4" class="Label" onclick="showdescription(4)">Dexterity</td>
+						<td id="min4"   class="Minimum" onclick="setmin(4); showdescription(4)">11</td>
+						<td id="minus4" class="Decrease" onclick="lower(4); showdescription(4)"></td>
+						<td id="bar4"   class="GaugeBG" style="width: 170px;" onclick="clickit(event, 4); showdescription(4)">
+							<div id="gauge4" class="Gauge"></div>
+						</td>
+						<td id="plus4"  class="Increase" onclick="raise(4); showdescription(4)"></td>
+						<td id="max4"   class="Maximum" onclick="setmax(4); showdescription(4)">17</td>
+						<td id="value4" class="Value">11</td>
+					</tr>
+					<script type="text/javascript">var g5 = new Gauge(
+					5, 11, 11, 17)</script>
+					<tr id="main5" class="main">
+						<td class="Icon"><img src="Graphics/Icons/Endurance.png" /></td>
+						<td id="label5" class="Label" onclick="showdescription(5)">Endurance</td>
+						<td id="min5"   class="Minimum" onclick="setmin(5); showdescription(5)">11</td>
+						<td id="minus5" class="Decrease" onclick="lower(5); showdescription(5)"></td>
+						<td id="bar5"   class="GaugeBG" style="width: 170px;" onclick="clickit(event, 5); showdescription(5)">
+							<div id="gauge5" class="Gauge"></div>
+						</td>
+						<td id="plus5"  class="Increase" onclick="raise(5); showdescription(5)"></td>
+						<td id="max5"   class="Maximum" onclick="setmax(5); showdescription(5)">17</td>
+						<td id="value5" class="Value">11</td>
+					</tr>
+					<script type="text/javascript">var g6 = new Gauge(
+					6, 11, 11, 17)</script>
+					<tr id="main6" class="main">
+						<td class="Icon"><img src="Graphics/Icons/Intelligence.png" /></td>
+						<td id="label6" class="Label" onclick="showdescription(6)">Intelligence</td>
+						<td id="min6"   class="Minimum" onclick="setmin(6); showdescription(6)">11</td>
+						<td id="minus6" class="Decrease" onclick="lower(6); showdescription(6)"></td>
+						<td id="bar6"   class="GaugeBG" style="width: 170px;" onclick="clickit(event, 6); showdescription(6)">
+							<div id="gauge6" class="Gauge"></div>
+						</td>
+						<td id="plus6"  class="Increase" onclick="raise(6); showdescription(6)"></td>
+						<td id="max6"   class="Maximum" onclick="setmax(6); showdescription(6)">17</td>
+						<td id="value6" class="Value">11</td>
+					</tr>
+					<script type="text/javascript">var g7 = new Gauge(
+					7, 11, 11, 17)</script>
+					<tr id="main7" class="main">
+						<td class="Icon"><img src="Graphics/Icons/Perception.png" /></td>
+						<td id="label7" class="Label" onclick="showdescription(7)">Perception</td>
+						<td id="min7"   class="Minimum" onclick="setmin(7); showdescription(7)">11</td>
+						<td id="minus7" class="Decrease" onclick="lower(7); showdescription(7)"></td>
+						<td id="bar7"   class="GaugeBG" style="width: 170px;" onclick="clickit(event, 7); showdescription(7)">
+							<div id="gauge7" class="Gauge"></div>
+						</td>
+						<td id="plus7"  class="Increase" onclick="raise(7); showdescription(7)"></td>
+						<td id="max7"   class="Maximum" onclick="setmax(7); showdescription(7)">17</td>
+						<td id="value7" class="Value">11</td>
+					</tr>
+					<script type="text/javascript">var g8 = new Gauge(
+					8, 11, 11, 17)</script>
+					<tr id="main8" class="main">
+						<td class="Icon"><img src="Graphics/Icons/Strength.png" /></td>
+						<td id="label8" class="Label" onclick="showdescription(8)">Strength</td>
+						<td id="min8"   class="Minimum" onclick="setmin(8); showdescription(8)">11</td>
+						<td id="minus8" class="Decrease" onclick="lower(8); showdescription(8)"></td>
+						<td id="bar8"   class="GaugeBG" style="width: 170px;" onclick="clickit(event, 8); showdescription(8)">
+							<div id="gauge8" class="Gauge"></div>
+						</td>
+						<td id="plus8"  class="Increase" onclick="raise(8); showdescription(8)"></td>
+						<td id="max8"   class="Maximum" onclick="setmax(8); showdescription(8)">17</td>
+						<td id="value8" class="Value">11</td>
+					</tr>
+					<script type="text/javascript">var g9 = new Gauge(
+					9, 11, 11, 17)</script>
+					<tr id="main9" class="main">
+						<td class="Icon"><img src="Graphics/Icons/Willpower.png" /></td>
+						<td id="label9" class="Label" onclick="showdescription(9)">Willpower</td>
+						<td id="min9"   class="Minimum" onclick="setmin(9); showdescription(9)">11</td>
+						<td id="minus9" class="Decrease" onclick="lower(9); showdescription(9)"></td>
+						<td id="bar9"   class="GaugeBG" style="width: 170px;" onclick="clickit(event, 9); showdescription(9)">
+							<div id="gauge9" class="Gauge"></div>
+						</td>
+						<td id="plus9"  class="Increase" onclick="raise(9); showdescription(9)"></td>
+						<td id="max9"   class="Maximum" onclick="setmax(9); showdescription(9)">17</td>
+						<td id="value9" class="Value">11</td>
+					</tr>	
+		<tr style="height: 15px;"></tr>
+
+		
+					<script type="text/javascript">var g10 = new Gauge(
+					10, 1, 1, 196)</script>
+					<tr id="main10" class="main">
+						<td class="Icon"><img src="Graphics/Icons/Armor Use.png" /></td>
+						<td id="label10" class="Label" onclick="showdescription(10)">Armor Use</td>
+						<td id="min10"   class="Minimum" onclick="setmin(10); showdescription(10)">1</td>
+						<td id="minus10" class="Decrease" onclick="lower(10); showdescription(10)"></td>
+						<td id="bar10"   class="GaugeBG" style="width: 170px;" onclick="clickit(event, 10); showdescription(10)">
+							<div id="gauge10" class="Gauge"></div>
+						</td>
+						<td id="plus10"  class="Increase" onclick="raise(10); showdescription(10)"></td>
+						<td id="max10"   class="Maximum" onclick="setmax(10); showdescription(10)">196</td>
+						<td id="value10" class="Value">1</td><td></td><td></td>
+						<td class="Icon"><img src="Graphics/Icons/Coordination.png" /></td><td>25<span style="font-size:11px;">%</span></td><td style="width: 0px"></td>
+						<td class="Icon"><img src="Graphics/Icons/Endurance.png" /></td><td>75<span style="font-size:11px;">%</span></td>
+					</tr>
+					<script type="text/javascript">var g11 = new Gauge(
+					11, 1, 1, 196)</script>
+					<tr id="main11" class="main">
+						<td class="Icon"><img src="Graphics/Icons/Dirty Tricks.png" /></td>
+						<td id="label11" class="Label" onclick="showdescription(11)">Dirty Tricks</td>
+						<td id="min11"   class="Minimum" onclick="setmin(11); showdescription(11)">1</td>
+						<td id="minus11" class="Decrease" onclick="lower(11); showdescription(11)"></td>
+						<td id="bar11"   class="GaugeBG" style="width: 170px;" onclick="clickit(event, 11); showdescription(11)">
+							<div id="gauge11" class="Gauge"></div>
+						</td>
+						<td id="plus11"  class="Increase" onclick="raise(11); showdescription(11)"></td>
+						<td id="max11"   class="Maximum" onclick="setmax(11); showdescription(11)">196</td>
+						<td id="value11" class="Value">1</td><td></td><td></td>
+						<td class="Icon"><img src="Graphics/Icons/Dexterity.png" /></td><td>50<span style="font-size:11px;">%</span></td><td style="width: 0px"></td>
+						<td class="Icon"><img src="Graphics/Icons/Perception.png" /></td><td>50<span style="font-size:11px;">%</span></td>
+					</tr>
+					<script type="text/javascript">var g12 = new Gauge(
+					12, 1, 1, 196)</script>
+					<tr id="main12" class="main">
+						<td class="Icon"><img src="Graphics/Icons/Dodge.png" /></td>
+						<td id="label12" class="Label" onclick="showdescription(12)">Dodge</td>
+						<td id="min12"   class="Minimum" onclick="setmin(12); showdescription(12)">1</td>
+						<td id="minus12" class="Decrease" onclick="lower(12); showdescription(12)"></td>
+						<td id="bar12"   class="GaugeBG" style="width: 170px;" onclick="clickit(event, 12); showdescription(12)">
+							<div id="gauge12" class="Gauge"></div>
+						</td>
+						<td id="plus12"  class="Increase" onclick="raise(12); showdescription(12)"></td>
+						<td id="max12"   class="Maximum" onclick="setmax(12); showdescription(12)">196</td>
+						<td id="value12" class="Value">1</td><td></td><td></td>
+						<td class="Icon"><img src="Graphics/Icons/Coordination.png" /></td><td>50<span style="font-size:11px;">%</span></td><td style="width: 0px"></td>
+						<td class="Icon"><img src="Graphics/Icons/Perception.png" /></td><td>50<span style="font-size:11px;">%</span></td>
+					</tr>
+					<script type="text/javascript">var g13 = new Gauge(
+					13, 1, 1, 196)</script>
+					<tr id="main13" class="main">
+						<td class="Icon"><img src="Graphics/Icons/Escape Artist.png" /></td>
+						<td id="label13" class="Label" onclick="showdescription(13)">Escape Artist</td>
+						<td id="min13"   class="Minimum" onclick="setmin(13); showdescription(13)">1</td>
+						<td id="minus13" class="Decrease" onclick="lower(13); showdescription(13)"></td>
+						<td id="bar13"   class="GaugeBG" style="width: 170px;" onclick="clickit(event, 13); showdescription(13)">
+							<div id="gauge13" class="Gauge"></div>
+						</td>
+						<td id="plus13"  class="Increase" onclick="raise(13); showdescription(13)"></td>
+						<td id="max13"   class="Maximum" onclick="setmax(13); showdescription(13)">196</td>
+						<td id="value13" class="Value">1</td><td></td><td></td>
+						<td class="Icon"><img src="Graphics/Icons/Dexterity.png" /></td><td>50<span style="font-size:11px;">%</span></td><td style="width: 0px"></td>
+						<td class="Icon"><img src="Graphics/Icons/Coordination.png" /></td><td>50<span style="font-size:11px;">%</span></td>
+					</tr>
+					<script type="text/javascript">var g14 = new Gauge(
+					14, 1, 1, 196)</script>
+					<tr id="main14" class="main">
+						<td class="Icon"><img src="Graphics/Icons/First Aid.png" /></td>
+						<td id="label14" class="Label" onclick="showdescription(14)">First Aid</td>
+						<td id="min14"   class="Minimum" onclick="setmin(14); showdescription(14)">1</td>
+						<td id="minus14" class="Decrease" onclick="lower(14); showdescription(14)"></td>
+						<td id="bar14"   class="GaugeBG" style="width: 170px;" onclick="clickit(event, 14); showdescription(14)">
+							<div id="gauge14" class="Gauge"></div>
+						</td>
+						<td id="plus14"  class="Increase" onclick="raise(14); showdescription(14)"></td>
+						<td id="max14"   class="Maximum" onclick="setmax(14); showdescription(14)">196</td>
+						<td id="value14" class="Value">1</td><td></td><td></td>
+						<td class="Icon"><img src="Graphics/Icons/Perception.png" /></td><td>25<span style="font-size:11px;">%</span></td><td style="width: 0px"></td>
+						<td class="Icon"><img src="Graphics/Icons/Intelligence.png" /></td><td>75<span style="font-size:11px;">%</span></td>
+					</tr>
+					<script type="text/javascript">var g15 = new Gauge(
+					15, 1, 1, 196)</script>
+					<tr id="main15" class="main">
+						<td class="Icon"><img src="Graphics/Icons/Group Tactics.png" /></td>
+						<td id="label15" class="Label" onclick="showdescription(15)">Group Tactics</td>
+						<td id="min15"   class="Minimum" onclick="setmin(15); showdescription(15)">1</td>
+						<td id="minus15" class="Decrease" onclick="lower(15); showdescription(15)"></td>
+						<td id="bar15"   class="GaugeBG" style="width: 170px;" onclick="clickit(event, 15); showdescription(15)">
+							<div id="gauge15" class="Gauge"></div>
+						</td>
+						<td id="plus15"  class="Increase" onclick="raise(15); showdescription(15)"></td>
+						<td id="max15"   class="Maximum" onclick="setmax(15); showdescription(15)">196</td>
+						<td id="value15" class="Value">1</td><td></td><td></td>
+						<td class="Icon"><img src="Graphics/Icons/Coordination.png" /></td><td>25<span style="font-size:11px;">%</span></td><td style="width: 0px"></td>
+						<td class="Icon"><img src="Graphics/Icons/Intelligence.png" /></td><td>75<span style="font-size:11px;">%</span></td>
+					</tr>
+					<script type="text/javascript">var g16 = new Gauge(
+					16, 1, 1, 196)</script>
+					<tr id="main16" class="main">
+						<td class="Icon"><img src="Graphics/Icons/Heavy Weapons.png" /></td>
+						<td id="label16" class="Label" onclick="showdescription(16)">Heavy Weapons</td>
+						<td id="min16"   class="Minimum" onclick="setmin(16); showdescription(16)">1</td>
+						<td id="minus16" class="Decrease" onclick="lower(16); showdescription(16)"></td>
+						<td id="bar16"   class="GaugeBG" style="width: 170px;" onclick="clickit(event, 16); showdescription(16)">
+							<div id="gauge16" class="Gauge"></div>
+						</td>
+						<td id="plus16"  class="Increase" onclick="raise(16); showdescription(16)"></td>
+						<td id="max16"   class="Maximum" onclick="setmax(16); showdescription(16)">196</td>
+						<td id="value16" class="Value">1</td><td></td><td></td>
+						<td class="Icon"><img src="Graphics/Icons/Strength.png" /></td><td>50<span style="font-size:11px;">%</span></td><td style="width: 0px"></td>
+						<td class="Icon"><img src="Graphics/Icons/Perception.png" /></td><td>50<span style="font-size:11px;">%</span></td>
+					</tr>
+					<script type="text/javascript">var g17 = new Gauge(
+					17, 1, 1, 196)</script>
+					<tr id="main17" class="main">
+						<td class="Icon"><img src="Graphics/Icons/Melee.png" /></td>
+						<td id="label17" class="Label" onclick="showdescription(17)">Melee</td>
+						<td id="min17"   class="Minimum" onclick="setmin(17); showdescription(17)">1</td>
+						<td id="minus17" class="Decrease" onclick="lower(17); showdescription(17)"></td>
+						<td id="bar17"   class="GaugeBG" style="width: 170px;" onclick="clickit(event, 17); showdescription(17)">
+							<div id="gauge17" class="Gauge"></div>
+						</td>
+						<td id="plus17"  class="Increase" onclick="raise(17); showdescription(17)"></td>
+						<td id="max17"   class="Maximum" onclick="setmax(17); showdescription(17)">196</td>
+						<td id="value17" class="Value">1</td><td></td><td></td>
+						<td class="Icon"><img src="Graphics/Icons/Strength.png" /></td><td>50<span style="font-size:11px;">%</span></td><td style="width: 0px"></td>
+						<td class="Icon"><img src="Graphics/Icons/Coordination.png" /></td><td>50<span style="font-size:11px;">%</span></td>
+					</tr>
+					<script type="text/javascript">var g18 = new Gauge(
+					18, 1, 1, 196)</script>
+					<tr id="main18" class="main">
+						<td class="Icon"><img src="Graphics/Icons/Pistol.png" /></td>
+						<td id="label18" class="Label" onclick="showdescription(18)">Pistol</td>
+						<td id="min18"   class="Minimum" onclick="setmin(18); showdescription(18)">1</td>
+						<td id="minus18" class="Decrease" onclick="lower(18); showdescription(18)"></td>
+						<td id="bar18"   class="GaugeBG" style="width: 170px;" onclick="clickit(event, 18); showdescription(18)">
+							<div id="gauge18" class="Gauge"></div>
+						</td>
+						<td id="plus18"  class="Increase" onclick="raise(18); showdescription(18)"></td>
+						<td id="max18"   class="Maximum" onclick="setmax(18); showdescription(18)">196</td>
+						<td id="value18" class="Value">1</td><td></td><td></td>
+						<td class="Icon"><img src="Graphics/Icons/Dexterity.png" /></td><td>50<span style="font-size:11px;">%</span></td><td style="width: 0px"></td>
+						<td class="Icon"><img src="Graphics/Icons/Perception.png" /></td><td>50<span style="font-size:11px;">%</span></td>
+					</tr>
+					<script type="text/javascript">var g19 = new Gauge(
+					19, 1, 1, 196)</script>
+					<tr id="main19" class="main">
+						<td class="Icon"><img src="Graphics/Icons/Power.png" /></td>
+						<td id="label19" class="Label" onclick="showdescription(19)">Power</td>
+						<td id="min19"   class="Minimum" onclick="setmin(19); showdescription(19)">1</td>
+						<td id="minus19" class="Decrease" onclick="lower(19); showdescription(19)"></td>
+						<td id="bar19"   class="GaugeBG" style="width: 170px;" onclick="clickit(event, 19); showdescription(19)">
+							<div id="gauge19" class="Gauge"></div>
+						</td>
+						<td id="plus19"  class="Increase" onclick="raise(19); showdescription(19)"></td>
+						<td id="max19"   class="Maximum" onclick="setmax(19); showdescription(19)">196</td>
+						<td id="value19" class="Value">1</td><td></td><td></td>
+						<td class="Icon"><img src="Graphics/Icons/Strength.png" /></td><td>50<span style="font-size:11px;">%</span></td><td style="width: 0px"></td>
+						<td class="Icon"><img src="Graphics/Icons/Endurance.png" /></td><td>50<span style="font-size:11px;">%</span></td>
+					</tr>
+					<script type="text/javascript">var g20 = new Gauge(
+					20, 1, 1, 196)</script>
+					<tr id="main20" class="main">
+						<td class="Icon"><img src="Graphics/Icons/Precision.png" /></td>
+						<td id="label20" class="Label" onclick="showdescription(20)">Precision</td>
+						<td id="min20"   class="Minimum" onclick="setmin(20); showdescription(20)">1</td>
+						<td id="minus20" class="Decrease" onclick="lower(20); showdescription(20)"></td>
+						<td id="bar20"   class="GaugeBG" style="width: 170px;" onclick="clickit(event, 20); showdescription(20)">
+							<div id="gauge20" class="Gauge"></div>
+						</td>
+						<td id="plus20"  class="Increase" onclick="raise(20); showdescription(20)"></td>
+						<td id="max20"   class="Maximum" onclick="setmax(20); showdescription(20)">196</td>
+						<td id="value20" class="Value">1</td><td></td><td></td>
+						<td class="Icon"><img src="Graphics/Icons/Dexterity.png" /></td><td>50<span style="font-size:11px;">%</span></td><td style="width: 0px"></td>
+						<td class="Icon"><img src="Graphics/Icons/Intelligence.png" /></td><td>50<span style="font-size:11px;">%</span></td>
+					</tr>
+					<script type="text/javascript">var g21 = new Gauge(
+					21, 1, 1, 196)</script>
+					<tr id="main21" class="main">
+						<td class="Icon"><img src="Graphics/Icons/Rifle.png" /></td>
+						<td id="label21" class="Label" onclick="showdescription(21)">Rifle</td>
+						<td id="min21"   class="Minimum" onclick="setmin(21); showdescription(21)">1</td>
+						<td id="minus21" class="Decrease" onclick="lower(21); showdescription(21)"></td>
+						<td id="bar21"   class="GaugeBG" style="width: 170px;" onclick="clickit(event, 21); showdescription(21)">
+							<div id="gauge21" class="Gauge"></div>
+						</td>
+						<td id="plus21"  class="Increase" onclick="raise(21); showdescription(21)"></td>
+						<td id="max21"   class="Maximum" onclick="setmax(21); showdescription(21)">196</td>
+						<td id="value21" class="Value">1</td><td></td><td></td>
+						<td class="Icon"><img src="Graphics/Icons/Dexterity.png" /></td><td>50<span style="font-size:11px;">%</span></td><td style="width: 0px"></td>
+						<td class="Icon"><img src="Graphics/Icons/Perception.png" /></td><td>50<span style="font-size:11px;">%</span></td>
+					</tr>
+					<script type="text/javascript">var g22 = new Gauge(
+					22, 1, 1, 196)</script>
+					<tr id="main22" class="main">
+						<td class="Icon"><img src="Graphics/Icons/Social.png" /></td>
+						<td id="label22" class="Label" onclick="showdescription(22)">Social</td>
+						<td id="min22"   class="Minimum" onclick="setmin(22); showdescription(22)">1</td>
+						<td id="minus22" class="Decrease" onclick="lower(22); showdescription(22)"></td>
+						<td id="bar22"   class="GaugeBG" style="width: 170px;" onclick="clickit(event, 22); showdescription(22)">
+							<div id="gauge22" class="Gauge"></div>
+						</td>
+						<td id="plus22"  class="Increase" onclick="raise(22); showdescription(22)"></td>
+						<td id="max22"   class="Maximum" onclick="setmax(22); showdescription(22)">196</td>
+						<td id="value22" class="Value">1</td><td></td><td></td>
+						<td class="Icon"><img src="Graphics/Icons/Charisma.png" /></td><td>75<span style="font-size:11px;">%</span></td><td style="width: 0px"></td>
+						<td class="Icon"><img src="Graphics/Icons/Perception.png" /></td><td>25<span style="font-size:11px;">%</span></td>
+					</tr>
+					<script type="text/javascript">var g23 = new Gauge(
+					23, 1, 1, 196)</script>
+					<tr id="main23" class="main">
+						<td class="Icon"><img src="Graphics/Icons/Tradeskills.png" /></td>
+						<td id="label23" class="Label" onclick="showdescription(23)">Tradeskills</td>
+						<td id="min23"   class="Minimum" onclick="setmin(23); showdescription(23)">1</td>
+						<td id="minus23" class="NoDecrease" onclick="lower(23); showdescription(23)"></td>
+						<td id="bar23"   class="GaugeBG" style="width: 170px;" onclick="clickit(event, 23); showdescription(23)">
+							<div id="gauge23" class="Gauge"></div>
+						</td>
+						<td id="plus23"  class="NoIncrease" onclick="raise(23); showdescription(23)"></td>
+						<td id="max23"   class="Maximum" onclick="setmax(23); showdescription(23)">196</td>
+						<td id="value23" class="Value">1</td><td></td><td></td>
+						<td class="Icon"><img src="Graphics/Icons/Intelligence.png" /></td><td>75<span style="font-size:11px;">%</span></td><td style="width: 0px"></td>
+						<td class="Icon"><img src="Graphics/Icons/Perception.png" /></td><td>25<span style="font-size:11px;">%</span></td>
+					</tr>
+		<tr style="height: 15px;"></tr>
+
+		
+					<script type="text/javascript">var g24 = new Gauge(
+					24, 1, 1, 196)</script>
+					<tr id="main24" class="main">
+						<td class="Icon"><img src="Graphics/Icons/Alpha Mutations.png" /></td>
+						<td id="label24" class="Label" onclick="showdescription(24)">Alpha Mutations</td>
+						<td id="min24"   class="Minimum" onclick="setmin(24); showdescription(24)">1</td>
+						<td id="minus24" class="NoDecrease" onclick="lower(24); showdescription(24)"></td>
+						<td id="bar24"   class="GaugeBG" style="width: 170px;" onclick="clickit(event, 24); showdescription(24)">
+							<div id="gauge24" class="Gauge"></div>
+						</td>
+						<td id="plus24"  class="NoIncrease" onclick="raise(24); showdescription(24)"></td>
+						<td id="max24"   class="Maximum" onclick="setmax(24); showdescription(24)">196</td>
+						<td id="value24" class="Value">1</td><td></td><td></td>
+						<td class="Icon"><img src="Graphics/Icons/Willpower.png" /></td><td>100<span style="font-size:11px;">%</span></td><td style="width: 0px"></td>
+						<td class="Icon"><img src="Graphics/Icons/Willpower.png" /></td><td>100<span style="font-size:11px;">%</span></td>
+					</tr>
+					<script type="text/javascript">var g25 = new Gauge(
+					25, 1, 1, 196)</script>
+					<tr id="main25" class="main">
+						<td class="Icon"><img src="Graphics/Icons/Empathic.png" /></td>
+						<td id="label25" class="Label" onclick="showdescription(25)">Empathic</td>
+						<td id="min25"   class="Minimum" onclick="setmin(25); showdescription(25)">1</td>
+						<td id="minus25" class="Decrease" onclick="lower(25); showdescription(25)"></td>
+						<td id="bar25"   class="GaugeBG" style="width: 170px;" onclick="clickit(event, 25); showdescription(25)">
+							<div id="gauge25" class="Gauge"></div>
+						</td>
+						<td id="plus25"  class="Increase" onclick="raise(25); showdescription(25)"></td>
+						<td id="max25"   class="Maximum" onclick="setmax(25); showdescription(25)">196</td>
+						<td id="value25" class="Value">1</td><td></td><td></td>
+						<td class="Icon"><img src="Graphics/Icons/Charisma.png" /></td><td>75<span style="font-size:11px;">%</span></td><td style="width: 0px"></td>
+						<td class="Icon"><img src="Graphics/Icons/Willpower.png" /></td><td>25<span style="font-size:11px;">%</span></td>
+					</tr>
+					<script type="text/javascript">var g26 = new Gauge(
+					26, 1, 1, 196)</script>
+					<tr id="main26" class="main">
+						<td class="Icon"><img src="Graphics/Icons/Enhancement.png" /></td>
+						<td id="label26" class="Label" onclick="showdescription(26)">Enhancement</td>
+						<td id="min26"   class="Minimum" onclick="setmin(26); showdescription(26)">1</td>
+						<td id="minus26" class="Decrease" onclick="lower(26); showdescription(26)"></td>
+						<td id="bar26"   class="GaugeBG" style="width: 170px;" onclick="clickit(event, 26); showdescription(26)">
+							<div id="gauge26" class="Gauge"></div>
+						</td>
+						<td id="plus26"  class="Increase" onclick="raise(26); showdescription(26)"></td>
+						<td id="max26"   class="Maximum" onclick="setmax(26); showdescription(26)">196</td>
+						<td id="value26" class="Value">1</td><td></td><td></td>
+						<td class="Icon"><img src="Graphics/Icons/Charisma.png" /></td><td>75<span style="font-size:11px;">%</span></td><td style="width: 0px"></td>
+						<td class="Icon"><img src="Graphics/Icons/Willpower.png" /></td><td>25<span style="font-size:11px;">%</span></td>
+					</tr>
+					<script type="text/javascript">var g27 = new Gauge(
+					27, 1, 1, 196)</script>
+					<tr id="main27" class="main">
+						<td class="Icon"><img src="Graphics/Icons/Illumination.png" /></td>
+						<td id="label27" class="Label" onclick="showdescription(27)">Illumination</td>
+						<td id="min27"   class="Minimum" onclick="setmin(27); showdescription(27)">1</td>
+						<td id="minus27" class="Decrease" onclick="lower(27); showdescription(27)"></td>
+						<td id="bar27"   class="GaugeBG" style="width: 170px;" onclick="clickit(event, 27); showdescription(27)">
+							<div id="gauge27" class="Gauge"></div>
+						</td>
+						<td id="plus27"  class="Increase" onclick="raise(27); showdescription(27)"></td>
+						<td id="max27"   class="Maximum" onclick="setmax(27); showdescription(27)">196</td>
+						<td id="value27" class="Value">1</td><td></td><td></td>
+						<td class="Icon"><img src="Graphics/Icons/Coordination.png" /></td><td>75<span style="font-size:11px;">%</span></td><td style="width: 0px"></td>
+						<td class="Icon"><img src="Graphics/Icons/Willpower.png" /></td><td>25<span style="font-size:11px;">%</span></td>
+					</tr>
+					<script type="text/javascript">var g28 = new Gauge(
+					28, 1, 1, 196)</script>
+					<tr id="main28" class="main">
+						<td class="Icon"><img src="Graphics/Icons/Nano-Manipulation.png" /></td>
+						<td id="label28" class="Label" onclick="showdescription(28)">Nano-Manipulation</td>
+						<td id="min28"   class="Minimum" onclick="setmin(28); showdescription(28)">1</td>
+						<td id="minus28" class="Decrease" onclick="lower(28); showdescription(28)"></td>
+						<td id="bar28"   class="GaugeBG" style="width: 170px;" onclick="clickit(event, 28); showdescription(28)">
+							<div id="gauge28" class="Gauge"></div>
+						</td>
+						<td id="plus28"  class="Increase" onclick="raise(28); showdescription(28)"></td>
+						<td id="max28"   class="Maximum" onclick="setmax(28); showdescription(28)">196</td>
+						<td id="value28" class="Value">1</td><td></td><td></td>
+						<td class="Icon"><img src="Graphics/Icons/Intelligence.png" /></td><td>75<span style="font-size:11px;">%</span></td><td style="width: 0px"></td>
+						<td class="Icon"><img src="Graphics/Icons/Willpower.png" /></td><td>25<span style="font-size:11px;">%</span></td>
+					</tr>
+					<script type="text/javascript">var g29 = new Gauge(
+					29, 1, 1, 196)</script>
+					<tr id="main29" class="main">
+						<td class="Icon"><img src="Graphics/Icons/Patho-Transmission.png" /></td>
+						<td id="label29" class="Label" onclick="showdescription(29)">Patho-Transmission</td>
+						<td id="min29"   class="Minimum" onclick="setmin(29); showdescription(29)">1</td>
+						<td id="minus29" class="Decrease" onclick="lower(29); showdescription(29)"></td>
+						<td id="bar29"   class="GaugeBG" style="width: 170px;" onclick="clickit(event, 29); showdescription(29)">
+							<div id="gauge29" class="Gauge"></div>
+						</td>
+						<td id="plus29"  class="Increase" onclick="raise(29); showdescription(29)"></td>
+						<td id="max29"   class="Maximum" onclick="setmax(29); showdescription(29)">196</td>
+						<td id="value29" class="Value">1</td><td></td><td></td>
+						<td class="Icon"><img src="Graphics/Icons/Endurance.png" /></td><td>75<span style="font-size:11px;">%</span></td><td style="width: 0px"></td>
+						<td class="Icon"><img src="Graphics/Icons/Willpower.png" /></td><td>25<span style="font-size:11px;">%</span></td>
+					</tr>
+					<script type="text/javascript">var g30 = new Gauge(
+					30, 1, 1, 196)</script>
+					<tr id="main30" class="main">
+						<td class="Icon"><img src="Graphics/Icons/Primal.png" /></td>
+						<td id="label30" class="Label" onclick="showdescription(30)">Primal</td>
+						<td id="min30"   class="Minimum" onclick="setmin(30); showdescription(30)">1</td>
+						<td id="minus30" class="Decrease" onclick="lower(30); showdescription(30)"></td>
+						<td id="bar30"   class="GaugeBG" style="width: 170px;" onclick="clickit(event, 30); showdescription(30)">
+							<div id="gauge30" class="Gauge"></div>
+						</td>
+						<td id="plus30"  class="Increase" onclick="raise(30); showdescription(30)"></td>
+						<td id="max30"   class="Maximum" onclick="setmax(30); showdescription(30)">196</td>
+						<td id="value30" class="Value">1</td><td></td><td></td>
+						<td class="Icon"><img src="Graphics/Icons/Strength.png" /></td><td>75<span style="font-size:11px;">%</span></td><td style="width: 0px"></td>
+						<td class="Icon"><img src="Graphics/Icons/Willpower.png" /></td><td>25<span style="font-size:11px;">%</span></td>
+					</tr>
+					<script type="text/javascript">var g31 = new Gauge(
+					31, 1, 1, 196)</script>
+					<tr id="main31" class="main">
+						<td class="Icon"><img src="Graphics/Icons/Sonic Influence.png" /></td>
+						<td id="label31" class="Label" onclick="showdescription(31)">Sonic Influence</td>
+						<td id="min31"   class="Minimum" onclick="setmin(31); showdescription(31)">1</td>
+						<td id="minus31" class="Decrease" onclick="lower(31); showdescription(31)"></td>
+						<td id="bar31"   class="GaugeBG" style="width: 170px;" onclick="clickit(event, 31); showdescription(31)">
+							<div id="gauge31" class="Gauge"></div>
+						</td>
+						<td id="plus31"  class="Increase" onclick="raise(31); showdescription(31)"></td>
+						<td id="max31"   class="Maximum" onclick="setmax(31); showdescription(31)">196</td>
+						<td id="value31" class="Value">1</td><td></td><td></td>
+						<td class="Icon"><img src="Graphics/Icons/Dexterity.png" /></td><td>75<span style="font-size:11px;">%</span></td><td style="width: 0px"></td>
+						<td class="Icon"><img src="Graphics/Icons/Willpower.png" /></td><td>25<span style="font-size:11px;">%</span></td>
+					</tr>
+					<script type="text/javascript">var g32 = new Gauge(
+					32, 1, 1, 196)</script>
+					<tr id="main32" class="main">
+						<td class="Icon"><img src="Graphics/Icons/Suppression.png" /></td>
+						<td id="label32" class="Label" onclick="showdescription(32)">Suppression</td>
+						<td id="min32"   class="Minimum" onclick="setmin(32); showdescription(32)">1</td>
+						<td id="minus32" class="Decrease" onclick="lower(32); showdescription(32)"></td>
+						<td id="bar32"   class="GaugeBG" style="width: 170px;" onclick="clickit(event, 32); showdescription(32)">
+							<div id="gauge32" class="Gauge"></div>
+						</td>
+						<td id="plus32"  class="Increase" onclick="raise(32); showdescription(32)"></td>
+						<td id="max32"   class="Maximum" onclick="setmax(32); showdescription(32)">196</td>
+						<td id="value32" class="Value">1</td><td></td><td></td>
+						<td class="Icon"><img src="Graphics/Icons/Perception.png" /></td><td>75<span style="font-size:11px;">%</span></td><td style="width: 0px"></td>
+						<td class="Icon"><img src="Graphics/Icons/Willpower.png" /></td><td>25<span style="font-size:11px;">%</span></td>
+					</tr>
+					<script type="text/javascript">var g33 = new Gauge(
+					33, 1, 1, 196)</script>
+					<tr id="main33" class="main">
+						<td class="Icon"><img src="Graphics/Icons/Telekinesis.png" /></td>
+						<td id="label33" class="Label" onclick="showdescription(33)">Telekinesis</td>
+						<td id="min33"   class="Minimum" onclick="setmin(33); showdescription(33)">1</td>
+						<td id="minus33" class="Decrease" onclick="lower(33); showdescription(33)"></td>
+						<td id="bar33"   class="GaugeBG" style="width: 170px;" onclick="clickit(event, 33); showdescription(33)">
+							<div id="gauge33" class="Gauge"></div>
+						</td>
+						<td id="plus33"  class="Increase" onclick="raise(33); showdescription(33)"></td>
+						<td id="max33"   class="Maximum" onclick="setmax(33); showdescription(33)">196</td>
+						<td id="value33" class="Value">1</td><td></td><td></td>
+						<td class="Icon"><img src="Graphics/Icons/Coordination.png" /></td><td>75<span style="font-size:11px;">%</span></td><td style="width: 0px"></td>
+						<td class="Icon"><img src="Graphics/Icons/Willpower.png" /></td><td>25<span style="font-size:11px;">%</span></td>
+					</tr>
+					<script type="text/javascript">var g34 = new Gauge(
+					34, 1, 1, 196)</script>
+					<tr id="main34" class="main">
+						<td class="Icon"><img src="Graphics/Icons/Thermal Control.png" /></td>
+						<td id="label34" class="Label" onclick="showdescription(34)">Thermal Control</td>
+						<td id="min34"   class="Minimum" onclick="setmin(34); showdescription(34)">1</td>
+						<td id="minus34" class="Decrease" onclick="lower(34); showdescription(34)"></td>
+						<td id="bar34"   class="GaugeBG" style="width: 170px;" onclick="clickit(event, 34); showdescription(34)">
+							<div id="gauge34" class="Gauge"></div>
+						</td>
+						<td id="plus34"  class="Increase" onclick="raise(34); showdescription(34)"></td>
+						<td id="max34"   class="Maximum" onclick="setmax(34); showdescription(34)">196</td>
+						<td id="value34" class="Value">1</td><td></td><td></td>
+						<td class="Icon"><img src="Graphics/Icons/Intelligence.png" /></td><td>75<span style="font-size:11px;">%</span></td><td style="width: 0px"></td>
+						<td class="Icon"><img src="Graphics/Icons/Willpower.png" /></td><td>25<span style="font-size:11px;">%</span></td>
+					</tr>	
+		
+	</table><br/>
+	
+	<div id="Description">
+		<div id="Character"></div>
+		
+		<div class="descriptionpanel attributedescription">
+			<div class="descriptionpanelheader" id="AttributesDesc"></div>
+			<div class="desc_text" id="panel_attributedescription">&nbsp;</div>
+		</div>
+		
+		<div class="descriptionpanel skilldescription">
+			<div class="descriptionpanelheader" id="SkillsDesc"></div>
+			<div class="desc_text" id="panel_skilldescription">&nbsp;</div>
+		</div>
+		
+		<div class="descriptionpanel mutationdescription">
+			<div id="MutationsDesc"></div>
+			<div class="desc_text" id="panel_mutationdescription">&nbsp;</div>
+		</div>
+	</div>
+	
+	<div id="Header"/><img src="Graphics/Header.png" /></div>
+	
+</div>			
+			<div class="no_cookies" id="no_cookies">Cookies must be enabled...</div>
+		</div>
+	</body>
+	
+</html>
