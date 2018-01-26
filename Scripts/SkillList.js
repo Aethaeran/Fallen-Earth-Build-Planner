@@ -140,23 +140,23 @@ var ability_details = [
     [SOCIA, DEF, ASK, DEB, ENE, "Inconspicuous", "This Social ability reduces the aggression your target has toward you. Costs (11/19/26/34/41/45) Stamina and has a 30 second cooldown.", [45, 75, 105, 135, 165, 195] ], 
 
 // Mutation Abilities
-    [ALPHA, OFF, TOG, BUF, SEL, "Bolster", "+Max Stamina +Power", [9, 30, 51, 72] ], 
-    [ALPHA, OFF, PAT, DEB, WEA, "Disrupt", "-Defense - Saves", [9, 30, 51, 72] ], 
-    [ALPHA, DEF, TOG, BUF, SEL, "Gird", "+Max Health", [9, 30, 51, 72] ], 
-    [ALPHA, DEF, ASK, HEA, SEL, "Patch", "+Health -Effect", [9, 30, 51, 72] ], 
+    [ALPHA, OFF, TOG, BUF, SEL, "Bolster", "This Alpha mutation raises your power by (3/6/9/12) and your maximum stamina by (3/6/9/12) This ability reserves 10% of your gamma and lasts until toggled off. Only one Alpha Mutation toggle can be used at a time.", [9, 30, 51, 72] ], 
+    [ALPHA, OFF, PAT, DEB, WEA, "Disrupt", "This Alpha mutation causes your next attack to also reduce your target's save values by (3/6/9/12) and their melee and ranged defense by (2/3/4/6) for 5 seconds. This will also stun the NPC for 2.5 seconds. Costs (6/17/29/40) gamma and has a 15 second cooldown. Resist-Mind.", [9, 30, 51, 72] ], 
+    [ALPHA, DEF, TOG, BUF, SEL, "Gird", "This Alpha mutation raises your maximum health by (7/12/20/30). This ability reserves 15% of your gamma and lasts until toggled off. Only one Alpha Mutation toggle can be used at a time.", [9, 30, 51, 72] ], 
+    [ALPHA, DEF, ASK, HEA, SEL, "Patch", "This Alpha mutation restores your target's health by (11/23/46/74) and removes negative status effect counters. Costs (7/14/21/30) gamma and has a 2 minute cooldown.", [9, 30, 51, 72] ], 
 
-    [EMPAT, SUP, ASK, HEA, SFR, "Benevolence", "+Health", [45, 63, 81, 99, 117, 135, 153, 171, 189] ], 
-    [EMPAT, SUP, ASK, CUR, SFR, "Preservation", "-DoT", [54, 72, 90, 108, 126, 144, 162, 180] ], 
-    [EMPAT, SUP, ASK, HEA, SFR, "Restoration", "+HoT", [75, 93, 111, 129, 147, 165, 183] ], 
-    [EMPAT, SUP, ASK, RES, FRI, "Share Life", "+Raise Dead (target) -Health (self)", [48, 66, 84, 102, 120, 138, 156, 174, 192] ], 
+    [EMPAT, SUP, ASK, HEA, SFR, "Benevolence", "This Empathic mutation restores (30/39/53/68/82/97/112/126/141) health to yourself or (60/78/107/136/165/195/224/253/282) to another target. Costs (22/26/34/41/49/56/64/71/79) gamma and has a 6 second cooldown.", [45, 63, 81, 99, 117, 135, 153, 171, 189] ], 
+    [EMPAT, SUP, ASK, CUR, SFR, "Preservation", "This Empathic mutation removes negative status effect counters from your target. Multiple applications may be needed for serious conditions. Costs (17/24/29/36/41/48/53/60) gamma and has a 2 second cooldown.", [54, 72, 90, 108, 126, 144, 162, 180] ], 
+    [EMPAT, SUP, ASK, HEA, SFR, "Restoration", "This Empathic mutation restores (9/12/15/18/21/24/27) health per second to yourself or (19/25/31/37/42/48/54) to another target for five seconds. Costs (42/52/62/72/82/92/102) gamma and has a 2 second cooldown.", [75, 93, 111, 129, 147, 165, 183] ], 
+    [EMPAT, SUP, ASK, RES, FRI, "Share Life", "This Empathic mutation restores (44/68/92/116/140/164/188/212/236) health to a dead target. Costs 60% of your own health and has a 1 minute cooldown.", [48, 66, 84, 102, 120, 138, 156, 174, 192] ], 
 
-    [ENHAN, DEF, STA, BUF, SEL, "Ablate", "+Armor -Power/Precision", [72, 90, 108, 126, 144, 162, 180] ], 
-    [ENHAN, SUP, AUR, BUF, TEA, "Calibration", "+Armor (Primary Resists)", [48, 66, 84, 102, 120, 138, 156, 174, 192] ], 
-    [ENHAN, SUP, AUR, BUF, TEA, "Resilience", "+Secondary & Tertiary Resists", [60, 78, 96, 114, 132, 150, 168, 186] ], 
+    [ENHAN, DEF, STA, BUF, SEL, "Ablate", "This Enhancement mutation increases your Primary, Secondary, and Tertiary armor values by (116/166/216/266/316/366/416), (163/233/303/373/443/513/583), and (223/333/433/533/633/733/833), but decreases your Power and Precision by (20/28/34/40/44/48/50). Only one stance may be used at a time.", [72, 90, 108, 126, 144, 162, 180] ], 
+    [ENHAN, SUP, AUR, BUF, TEA, "Calibration", "This Enhancement mutation increases the Primary Armor of all teammates within 30 meters by (99/139/209/279/349/419/489/559/629). You may only run one aura ability at a time.", [48, 66, 84, 102, 120, 138, 156, 174, 192] ], 
+    [ENHAN, SUP, AUR, BUF, TEA, "Resilience", "This Enhancement mutation increases your team's secondary and tertiary armor by (75/115/155/195/235/275/315/355) and (175/215/255/295/335/375/415/455). You may only use one aura ability at a time.", [60, 78, 96, 114, 132, 150, 168, 186] ], 
 
-    [ILLUM, SUP, ASK, BUF, TEA, "Endless Reserves", "Recharge Team (not user) Stamina & Gamma", [60, 78, 96, 114, 132, 150, 168, 186] ], 
-    [ILLUM, SUP, AUR, BUF, TEA, "Meditation", "+Regen Stamina & Gamma (3-19) +Mutation/HW/Grenade damage", [48, 66, 84, 102, 121, 138, 156, 174, 192] ], 
-    [ILLUM, SUP, AUR, BUF, TEA, "Enlighten", "+Maximum Stamina & Gamma (15-20-25-30-35-40-45-50)", [54, 72, 90, 108, 126, 144, 162, 180] ], 
+    [ILLUM, SUP, ASK, BUF, TEA, "Endless Reserves", "This Illumination mutation invigorates teammates within 30 meters of you, restoring (20/30/40/50/60/80/100/140) gamma and stamina. Costs (10/15/20/25/30/40/50/70) gamma and stamina, and has a 2 minute cooldown. Does not effect user.", [60, 78, 96, 114, 132, 150, 168, 186] ], 
+    [ILLUM, SUP, AUR, BUF, TEA, "Meditation", "This Illumination mutation increases your team's Stamina and Gamma Regeneration by (3/5/7/9/11/13/15/17/19), and increases damage dealt by mutations by (5/5/15/10/10/10/15/15/15)%. You may only run one aura ability at a time.", [48, 66, 84, 102, 121, 138, 156, 174, 192] ], 
+    [ILLUM, SUP, AUR, BUF, TEA, "Enlighten", "This Illumination mutation increases your team's Stamina and Gamma by (15/20/25/30/35/40/45/50). You may only use one aura ability at a time.", [54, 72, 90, 108, 126, 144, 162, 180] ], 
 
     [NA_MA, SUP, AIM, HEA, FRI, "Filtration", "+Health -Effect, Allow fire 2 pistols by LMB", [57, 75, 93, 111, 129, 147, 164, 183] ], 
     [NA_MA, SUP, ASK, RES, TCO, "Reconstruction", "Mass Cone Raise Dead", [48, 66, 84, 102, 120, 138, 156, 174, 192] ], 
