@@ -64,7 +64,7 @@ function decode_link()
 	hash = hash.replace(reg, "");
   if (hash.length != 72)
   {
-    alert("Le Cartel\n\nCorrupted Build Hash, setting default...");    
+    alert("Fallen Earth Build Planner\n\nCorrupted Build Hash, setting default...");    
     hash = "#0100000B0B0B0B0B0B0B0B01010101010101010101010101160101010101010101010101";
     window.location.hash = hash;
     decode_link();
