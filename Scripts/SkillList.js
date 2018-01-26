@@ -158,14 +158,14 @@ var ability_details = [
     [ILLUM, SUP, AUR, BUF, TEA, "Meditation", "This Illumination mutation increases your team's Stamina and Gamma Regeneration by (3/5/7/9/11/13/15/17/19), and increases damage dealt by mutations by (5/5/15/10/10/10/15/15/15)%. You may only run one aura ability at a time.", [48, 66, 84, 102, 121, 138, 156, 174, 192] ], 
     [ILLUM, SUP, AUR, BUF, TEA, "Enlighten", "This Illumination mutation increases your team's Stamina and Gamma by (15/20/25/30/35/40/45/50). You may only use one aura ability at a time.", [54, 72, 90, 108, 126, 144, 162, 180] ], 
 
-    [NA_MA, SUP, AIM, HEA, FRI, "Filtration", "+Health -Effect, Allow fire 2 pistols by LMB", [57, 75, 93, 111, 129, 147, 164, 183] ], 
-    [NA_MA, SUP, ASK, RES, TCO, "Reconstruction", "Mass Cone Raise Dead", [48, 66, 84, 102, 120, 138, 156, 174, 192] ], 
-    [NA_MA, SUP, ASK, BUF, TEA, "Revitalize", "+Regen Health", [72, 90, 108, 126, 144, 162, 180] ], 
-    [NA_MA, SUP, ASK, HEA, TEA, "Vital Osmosis", "+Health to all Team in Raid", [45, 63, 81, 99, 117, 135, 153, 171, 189] ], 
+    [NA_MA, SUP, AIM, HEA, FRI, "Filtration", "This Nano-Manipulation mutation removes negative status effect counters and heals your target for (82/112/141/170/200/229/258/288) health each time you successfully hit. Costs (19/26/34/41/49/56/64/71) gamma and has a 5 second cooldown.", [57, 75, 93, 111, 129, 147, 164, 183] ], 
+    [NA_MA, SUP, ASK, RES, TCO, "Reconstruction", "This Nano-Manipulation mutation revives all dead teammates in a cone shaped area in front of you, restoring (33/51/69/87/105/123/141/159/177) health. Costs (20/27/35/42/50/57/65/72/80) gamma and has a 10 minute cooldown.", [48, 66, 84, 102, 120, 138, 156, 174, 192] ], 
+    [NA_MA, SUP, ASK, BUF, TEA, "Revitalize", "This Nano-Manipulation mutation increases the health regeneration of all teammates within 30 meters by (8/12/16/20/24/28/32) for 30 seconds. Costs (30/37/45/52/60/67/75) gamma and has a 45 second cooldown.", [72, 90, 108, 126, 144, 162, 180] ], 
+    [NA_MA, SUP, ASK, HEA, TEA, "Vital Osmosis", "This Nano-Manipulation mutation heals all teammates within 30 meters of you, restoring (30/50/75/100/125/150/200/250/275) health. Costs (30/40/50/60/70/80/90/100/110) gamma and has a 1 minute cooldown.", [45, 63, 81, 99, 117, 135, 153, 171, 189] ], 
 
-    [PA_TR, OFF, ASK, DEB, ENE, "Thwarted Intention", "-Healing Effects to target (-10-50%)", [60, 78, 96, 114, 132, 150, 168, 186] ], 
-    [PA_TR, OFF, ASK, DEB, ENA, "Sapping Sickness", "+Snare (12-30% 10 sec)", [72, 90, 108, 126, 144, 162, 180] ], 
-    [PA_TR, OFF, ASK, DEB, ENE, "Wracking Pains", "-Regen (-9-33)", [48, 66, 84, 102, 120, 138, 156, 174, 192] ], 
+    [PA_TR, OFF, ASK, DEB, ENE, "Thwarted Intention", "This Patho-Transmission mutation reduces healing done to the target by (10/15/20/25/30/35/40/50)% for 8 seconds. Cost (30/45/60/75/90/105/120/135) gamma and has a 1 minute cooldown. Resist- Mind.", [60, 78, 96, 114, 132, 150, 168, 186] ], 
+    [PA_TR, OFF, ASK, DEB, ENA, "Sapping Sickness", "This Patho-Transmission mutation reduces the speed of everyone close to your target by (12/15/18/21/24/27/30)% for 10 seconds. Costs (33/44/55/66/77/88/99) gamma and has a 2 minute cooldown. Resist- Reflex.", [72, 90, 108, 126, 144, 162, 180] ], 
+    [PA_TR, OFF, ASK, DEB, ENE, "Wracking Pains", "This Patho-Transmission mutation reduces your target's regeneration rates by (9/12/15/18/21/24/27/30/33) for 20 seconds. Costs (22/27/35/42/50/57/65/72/80) gamma and has a 1 minute cooldown. Resist- Mind.", [48, 66, 84, 102, 120, 138, 156, 174, 192] ], 
 
     [PRIMA, OFF, ASK, BUF, SEL, "Beast Might", "+Damage (35-60%) 1 shot within 6 sec -Health(Self)", [72, 90, 108, 126, 144, 162, 180] ], 
     [PRIMA, OFF, TOG, BUF, SEL, "Primal Vigor", " +Max Health -50% Gamma", [48, 66, 84, 102, 120, 138, 156, 174, 192] ], 
