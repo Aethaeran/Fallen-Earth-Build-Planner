@@ -19,7 +19,7 @@ body {
 
 #Body {
 	width: 990px;
-	height: 900px;
+	height: 940px;
 	/*margin: auto;*/
 	box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.7);
 
@@ -88,7 +88,7 @@ body {
 
 #Abilities {
 	position: relative;
-	top: -23px;
+	top: -25px;
 	left: -13px;
 }
 
@@ -107,15 +107,15 @@ body {
 }
 
 #panel_skilldescription {
-	width: 300px;
+	width: 360px;
 	height: 334px;
 	position: relative;
-	top: -581px;
+	top: -600px;
 	left: 643px;
 }
 
 #panel_attributedescription {
-	width: 350px;
+	width: 360px;
 	height: 334px;
 	position: relative;
 	top: -788px;
@@ -123,10 +123,10 @@ body {
 }
 
 #panel_mutationdescription {
-	width: 350px;
+	width: 360px;
 	height: 334px;
 	position: relative;
-	top: -629px;
+	top: -650px;
 	left: 643px;
 }
 
