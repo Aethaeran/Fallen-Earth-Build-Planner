@@ -108,30 +108,30 @@ var ability_details = [
     [FI_AI, SUP, ASK, CUR, SFR, "Renew", "This First Aid ability removes negative status effect counters and effect level (5/7/9/11) or lower snares from your target. Multiple applications may be needed for serious conditions. Costs (35/47/60/72) stamina and has a 40 second cooldown.", [84, 114, 144, 174] ], 
     [FI_AI, SUP, ASK, RES, FRI, "Resuscitation", "This First Aid ability revives a very close target with (52/97/142) health and then increases their health regeneration by (14/26/38) for 1 minute. Costs (16/40/64) stamina and has a 15 second cooldown.", [39, 99, 159] ], 
 
-    [GR_TA, SUP, AUR, BUF, TEA, "Combat Endurance", "+Dodge (10-60)", [42, 72, 102, 132, 162, 192] ], 
-    [GR_TA, SUP, AUR, BDB, TEA, "Offensive Coordination", "+Stamina Regen +Precision (10-60) -Dodge", [30, 60, 90, 120, 150, 180] ], 
-    [GR_TA, SUP, AUR, BUF, TEA, "Give 'em Hell", "+Power 30-45-60-75-90", [60, 90, 120, 150, 180] ], 
-    [GR_TA, OFF, ASK, DEB, ENE, "Overwhelm", "-Armor -Defense", [69, 99, 129, 159, 189] ], 
+    [GR_TA, SUP, AUR, BUF, TEA, "Combat Endurance", "This Group Tactics ability increases the melee defense and range defense of all teammates within 30 meters by (10/20/30/40/50/60). You may only run one aura ability at a time.", [42, 72, 102, 132, 162, 192] ], 
+    [GR_TA, SUP, AUR, BDB, TEA, "Offensive Coordination", "This Group Tactics ability increases the precision of all teammates within 30 meters by (10/20/30/40/50/60) and their stamina regeneration by (1/2/3/4/5/6). You may only run one aura ability at a time.", [30, 60, 90, 120, 150, 180] ], 
+    [GR_TA, SUP, AUR, BUF, TEA, "Give 'em Hell", "This Group Tactics ability increases the power of all teammates within 30 meters by (30/45/60/75/90). You may only run one aura ability at a time.", [60, 90, 120, 150, 180] ], 
+    [GR_TA, OFF, ASK, DEB, ENE, "Overwhelm", "This Group Tactics ability marks your target, as well as reducing their ranged and melee defense by (10/20/30/40/50) and their Primary Armor by (143/283/434/594/765) for 15 seconds. Costs (17/25/32/40/47) stamina and has a 45 second cooldown.", [69, 99, 129, 159, 189] ], 
 
-    [HE_WE, OFF, ASK, DEB, ENA, "Caltrops", "+Snare", [195] ], 
-    [HE_WE, OFF, ASK, DEB, ENA, "Soften'em Up", "-Resist Slashing/Piercing/Fire/Acid 10 sec", [150, 180] ], 
-    [HE_WE, OFF, STA, BUF, SEL, "Suppressive Fire", "+Damage: HW, Grenade, Mutation 5% / 10%", [165, 195] ], 
+    [HE_WE, OFF, ASK, DEB, ENA, "Caltrops", "This Heavy Weapons ability slows anyone within 5 meters of your target by 35% for 5 seconds. Costs 115 Stamina and has a 1 minute cooldown. Resist-Reflex.", [195] ], 
+    [HE_WE, OFF, ASK, DEB, ENA, "Soften'em Up", "This Heavy Weapons ability affects anyone within 5 meters of your target, lowering their Piercing and Slashing resists by (466/583), Fire resist by (666/833), and Acid resist by (666/1083) also their Reflex saves by 30 for 10 seconds. Costs (83/100) Stamina and has a 1 minute cooldown. Resist- Body.", [150, 180] ], 
+    [HE_WE, OFF, STA, BUF, SEL, "Suppressive Fire", "This Heavy Weapons stance increases your heavy weapons damage by (5/10)%. Also effects grenades, mutations, but does not effect damage over time effects. Only one stance may be used at a time.", [165, 195] ], 
 
-    [MELEE, OFF, ASK, BUF, SEL, "Charge", "+Speed", [60, 90, 120, 150, 180] ], 
-    [MELEE, OFF, ASK, BDB, ENE, "Provoke", "+Threat -Defence, Remove/Block PVP Charge", [45, 60, 75, 90, 105, 120, 135, 150, 165, 180, 195] ], 
-    [MELEE, OFF, STA, BUF, SEL, "Bloodlust", "+Melee skill (15/25/37)", [60, 105, 150] ], 
+    [MELEE, OFF, ASK, BUF, SEL, "Charge", "This Melee ability increases your speed by (10/15/20/25/30)%. It will last 8 seconds or until your next attack. Costs (33/50/66/83/100) stamina and has a 40 second cooldown.", [60, 90, 120, 150, 180] ], 
+    [MELEE, OFF, ASK, BDB, ENE, "Provoke", "This Melee ability increases your target's aggression toward you and reduces their ranged and melee defense by (5/10/15/20/25/30/35/40/45/50/55) for 10 seconds. Removes and blocks the Charge ability up to rank (0/0/1/1/2/2/3/3/4/4/5). Costs (11/15/19/22/26/30/34/37/41/45/49) stamina and has a 30 second cooldown.", [45, 60, 75, 90, 105, 120, 135, 150, 165, 180, 195] ], 
+    [MELEE, OFF, STA, BUF, SEL, "Bloodlust", "This Melee ability increases your melee skill by (15/25/37). Only one stance may be used at a time.", [60, 105, 150] ], 
 
-    [PISTO, OFF, PAT, DOT, WEA, "Incendiary Strike", "+DoT Fire", [60, 90, 120, 150, 180] ], 
-    [PISTO, OFF, ASK, BUF, SEL, "Perfect Timing", "+Precision (20-40-60-80-100) for all shots within 6 sec", [63, 93, 123, 153, 183] ], 
-    [PISTO, OFF, STA, BUF, SEL, "Desperado", "+Pistol skill (15/25/37)", [60, 105, 150] ], 
+    [PISTO, OFF, PAT, DOT, WEA, "Incendiary Strike", "This Pistol ability causes your next attack to also inflict (7/11/15/20/24) fire damage per second for 15 seconds. Costs (33/50/67/83/100) stamina and has a 45 second cooldown. Resist-Mind.", [60, 90, 120, 150, 180] ], 
+    [PISTO, OFF, ASK, BUF, SEL, "Perfect Timing", "This Pistol ability increases your precision by (20/40/60/80/100). It will last 6 seconds. Costs (35/52/69/85/102) stamina and has a 30 second cooldown.", [63, 93, 123, 153, 183] ], 
+    [PISTO, OFF, STA, BUF, SEL, "Desperado", "This Pistol ability increases your pistol skill by (15/25/37). Only one stance may be used at a time.", [60, 105, 150] ], 
 
-    [POWER, OFF, STA, BDB, SEL, "Attack Posture", "+Power (25-125) -Precision (10-50)", [63, 93, 123, 153, 183] ], 
-    [POWER, OFF, PAT, DEB, WEA, "Dent Armor", "-Armor +Stun", [51, 81, 111, 141, 171] ], 
+    [POWER, OFF, STA, BDB, SEL, "Attack Posture", "This Power ability increases your power by (25/50/75/100/125) but reduces your precision by (10/20/30/40/50). Only one stance may be used at a time.", [63, 93, 123, 153, 183] ], 
+    [POWER, OFF, PAT, DEB, WEA, "Dent Armor", "This Power ability causes your next attack to reduce your target's armor by (225/308/391/474/557) for 10 seconds. This will also stun NPC targets for 2 seconds. Costs (20/32/45/57/70) stamina and has a 30 second cooldown. Resist-Reflex.", [51, 81, 111, 141, 171] ], 
 
-    [PRECI, OFF, ASK, BUF, SEL, "Precise Hit", "+Damage (35-40-45-50-60%) 1 shot within 6 sec", [51, 81, 111, 141, 171] ], 
-    [PRECI, OFF, STA, BDB, SEL, "Concentration", "+Precision & All Weapon Skill -Power (25-100)", [60, 105, 150, 195] ], 
+    [PRECI, OFF, ASK, BUF, SEL, "Precise Hit", "This Precision ability adds (35/40/45/50/60)% physical damage to your next attack within the next 6 seconds. This will also slow NPC targets by (15/17/19/21/23)% for 7 seconds. Costs (40/48/56/64/80) stamina and has a 20 second cooldown. Resist-Reflex.", [51, 81, 111, 141, 171] ], 
+    [PRECI, OFF, STA, BDB, SEL, "Concentration", "This Precision ability increases your precision and weapon skills by (15/25/37/48) but decreases your Power by (25/50/75/100). Only one stance may be used at a time.", [60, 105, 150, 195] ], 
 
-    [RIFLE, OFF, PAT, DEB, WEA, "Agonizing Wound", "+Snare", [54, 84, 114, 144, 174] ], 
+    [RIFLE, OFF, PAT, DEB, WEA, "Agonizing Wound", "This Rifle ability causes your next attack to slow your target by (17/19/21/23/25)% for 10 seconds. Costs (30/46/63/80/96) stamina and has a 30 second cooldown. Resist-Reflex.", [54, 84, 114, 144, 174] ], 
     [RIFLE, OFF, ASK, BUF, SEL, "Bull's Eye", "+Damage (35-40-45-50-60%) 1 shot within 6 sec", [60, 90, 120, 150, 180] ], 
     [RIFLE, OFF, STA, BUF, SEL, "Marksman", "+Rifle skill (15/25/37)", [60, 105, 150] ], 
 
