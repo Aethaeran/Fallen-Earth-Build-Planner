@@ -167,24 +167,24 @@ var ability_details = [
     [PA_TR, OFF, ASK, DEB, ENA, "Sapping Sickness", "This Patho-Transmission mutation reduces the speed of everyone close to your target by (12/15/18/21/24/27/30)% for 10 seconds. Costs (33/44/55/66/77/88/99) gamma and has a 2 minute cooldown. Resist- Reflex.", [72, 90, 108, 126, 144, 162, 180] ], 
     [PA_TR, OFF, ASK, DEB, ENE, "Wracking Pains", "This Patho-Transmission mutation reduces your target's regeneration rates by (9/12/15/18/21/24/27/30/33) for 20 seconds. Costs (22/27/35/42/50/57/65/72/80) gamma and has a 1 minute cooldown. Resist- Mind.", [48, 66, 84, 102, 120, 138, 156, 174, 192] ], 
 
-    [PRIMA, OFF, ASK, BUF, SEL, "Beast Might", "+Damage (35-60%) 1 shot within 6 sec -Health(Self)", [72, 90, 108, 126, 144, 162, 180] ], 
-    [PRIMA, OFF, TOG, BUF, SEL, "Primal Vigor", " +Max Health -50% Gamma", [48, 66, 84, 102, 120, 138, 156, 174, 192] ], 
-    [PRIMA, OFF, ASK, BDB, SEL, "Rampage", "+Power/Precision/Armor 15 sec -same 15 sec", [60, 78, 96, 114, 132, 150, 168, 186] ], 
+    [PRIMA, OFF, ASK, BUF, SEL, "Beast Might", "This Primal mutation adds (30/35/40/45/50/55/60)% physical damage to your next attack within the next 6 seconds. Costs (50/62/75/87/100/112/125) health and has a 15 second cooldown.", [72, 90, 108, 126, 144, 162, 180] ], 
+    [PRIMA, OFF, TOG, BUF, SEL, "Primal Vigor", "This Primal mutation increases your maximum health by (65/85/105/120/145/165/185/205/225). This ability reserves 50% of your gamma and lasts until toggled off.", [48, 66, 84, 102, 120, 138, 156, 174, 192] ], 
+    [PRIMA, OFF, ASK, BDB, SEL, "Rampage", "This Primal mutation increases your power and precision by (40/52/64/76/88/100/112/124) and your armor by (166/266/366/466/566/666/766/866) for 15 seconds, but decreases them by the same amount afterwards for 15 seconds. This ability has a 1 minute cooldown.", [60, 78, 96, 114, 132, 150, 168, 186] ], 
 
-    [SONIC, OFF, ASK, DEB, ENE, "Catastrophic Dissonance", "+Snare (18-34%)", [60, 78, 96, 114, 132, 150, 168, 174] ], 
-    [SONIC, OFF, AIM, DOT, ECO, "Rending Vibration", "+DoT (Sonic)", [72, 90, 108, 126, 144, 162, 180] ], 
-    [SONIC, OFF, ASK, DDA, ENE, "Sonic Lance", "+Damage (Sonic)", [48, 66, 84, 102, 120, 138, 156, 174, 192] ], 
+    [SONIC, OFF, ASK, DEB, ENE, "Catastrophic Dissonance", "This Sonic Influence mutation slows your target by (16/18/20/22/24/26/28/34)% for 10 seconds. Costs (43/53/63/73/83/93/103/113) gamma and has a 60 second cooldown. Resist- Mind.", [60, 78, 96, 114, 132, 150, 168, 174] ], 
+    [SONIC, OFF, AIM, DOT, ECO, "Rending Vibration", "This Sonic Influence mutation does (8/12/16/20/24/28/32) damage per second for 15 seconds to all targets in a cone shaped area in front of you. Costs (36/46/56/66/77/87/96) gamma and has a 45 second cooldown. Resist- Mind.", [72, 90, 108, 126, 144, 162, 180] ], 
+    [SONIC, OFF, ASK, DDA, ENE, "Sonic Lance", "This Sonic Influence mutation does (32/47/63/78/94/109/124/140/156) sonic damage to your target and reduces their melee and range defence by (10/15/20/25/30/35/40/45/60) for 10 seconds. Costs 106 gamma and has a 20 second cooldown. Resist- Reflex.", [48, 66, 84, 102, 120, 138, 156, 174, 192] ], 
 
-    [SUPPR, OFF, ASK, DEB, ENE, "Denial", "-Stamina -Gamma", [48, 66, 84, 102, 120, 138, 156, 174, 192] ], 
-    [SUPPR, SUP, ASK, BDB, ENE, "Sap Stamina", "-Stamina(Enemy) +Stamina(Team)", [72, 90, 108, 126, 144, 162, 180] ], 
-    [SUPPR, SUP, ASK, BDB, ENE, "Siphon Energy", "-Gamma(Enemy) +Gamma(Team)", [60, 78, 96, 114, 132, 150, 168, 186] ], 
+    [SUPPR, OFF, ASK, DEB, ENE, "Denial", "This Suppression mutation reduces your target's gamma and stamina by (30/40/50/60/70/80/100/120/150). Costs (15/20/25/30/35/40/50/60/70) stamina and (15/20/25/30/35/40/50/60/70) gamma, and has a 1 minute cooldown. Resist- Mind.", [48, 66, 84, 102, 120, 138, 156, 174, 192] ], 
+    [SUPPR, SUP, ASK, BDB, ENE, "Sap Stamina", "This Suppression mutation reduces your targets Stamina by (60/74/94/104/120/134/150) and increases your teammates stamina by (74/37/47/52/60/67/75). Costs (25/45/65/85/105/125/150) gamma and has a 1 minute cooldown. Resist- Reflex.", [72, 90, 108, 126, 144, 162, 180] ], 
+    [SUPPR, SUP, ASK, BDB, ENE, "Siphon Energy", "This Suppression mutation reduces your target's gamma by (50/64/80/94/110/124/140/154) and increases your teammates' gamma by (12/32/40/47/55/62/70/77). Costs (50/64/80/94/110/124/140/154) gamma and has a 1 minute cooldown. Resist- Reflex.", [60, 78, 96, 114, 132, 150, 168, 186] ], 
 
-    [TELEK, OFF, ASK, DOT, ENE, "Always Armed", "+DoT (Piercing)", [48, 66, 84, 102, 120, 138, 156, 174, 192] ], 
-    [TELEK, OFF, ASK, DEB, ENE, "Bend Metal", "-Armor, Allow fire 2 pistols by LMB", [72, 90, 108, 126, 144, 162, 180] ], 
-    [TELEK, OFF, ASK, DDA, ENE, "Propel", "+Damage (Crushing)", [60, 78, 96, 114, 132, 150, 168, 186] ], 
+    [TELEK, OFF, ASK, DOT, ENE, "Always Armed", "This Telekinesis mutation does (6/9/12/15/18/21/24/27/36) damage per second to your target for 5 seconds. Costs (10/15/20/25/30/35/40/45/50) gamma and has a 5 second cooldown. Resist- Body.", [48, 66, 84, 102, 120, 138, 156, 174, 192] ], 
+    [TELEK, OFF, ASK, DEB, ENE, "Bend Metal", "This Telekinesis mutation reduces target armor by (164/340/515/696/883/1076/1300) for 10 seconds. Costs (30/37/45/52/60/67/75) gamma and has a 1 minute cooldown. Resist- Reflex.", [72, 90, 108, 126, 144, 162, 180] ], 
+    [TELEK, OFF, ASK, DDA, ENE, "Propel", "This Telekinesis mutation does (64/87/110/133/156/179/202/225) crushing damage to your target. Costs (20/30/40/50/60/70/80/90) gamma and has a 20 second cooldown. Resist- Reflex.", [60, 78, 96, 114, 132, 150, 168, 186] ], 
 
-    [TH_CO, OFF, ASK, DDA, ENE, "Cold Snap", "+Damage (Cold)", [45, 63, 81, 99, 117, 135, 153, 171, 189] ], 
-    [TH_CO, OFF, ASK, DOT, ENE, "Hypothermia", "+DoT (Cold)", [48, 66, 84, 102, 120, 138, 156, 174, 192] ], 
-    [TH_CO, OFF, ASK, DDA, ENE, "Molotov Cocktail", "+Damage (Fire)", [72, 90, 108, 126, 144, 162, 180] ], 
-    [TH_CO, OFF, ASK, DOT, ENE, "Napalm", "+DoT (Fire)", [57, 75, 93, 111, 129, 147, 165, 183] ]
+    [TH_CO, OFF, ASK, DDA, ENE, "Cold Snap", "This Thermal Control mutation does (12/14/20/25/31/36/42/47/53) cold damage to your target. Costs (12/16/20/25/29/34/38/43/47) gamma and has a 2 second cooldown. Resist- Mind.", [45, 63, 81, 99, 117, 135, 153, 171, 189] ], 
+    [TH_CO, OFF, ASK, DOT, ENE, "Hypothermia", "This Thermal Control mutation does (4/6/8/10/12/14/16/18/20) damage per second to your target for 15 seconds. Costs (20/27/35/42/50/57/65/72/80) gamma and has a 5 second cooldown. Resist- Mind.", [48, 66, 84, 102, 120, 138, 156, 174, 192] ], 
+    [TH_CO, OFF, ASK, DDA, ENE, "Molotov Cocktail", "This Thermal Control mutation does (70/90/111/131/151/172/192) damage to your target. Costs (48/60/72/84/96/108/120) gamma and has a 20 second cooldown. Resist- Reflex.", [72, 90, 108, 126, 144, 162, 180] ], 
+    [TH_CO, OFF, ASK, DOT, ENE, "Napalm", "This Thermal Control mutation does (9/13/17/20/24/28/32/35) damage per second to your target for 5 seconds. Costs (28/36/45/54/63/71/80/89) gamma and has a 15 second cooldown. Resist- Body.", [57, 75, 93, 111, 129, 147, 165, 183] ]
 ];
