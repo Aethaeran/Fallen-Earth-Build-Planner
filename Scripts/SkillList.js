@@ -132,8 +132,8 @@ var ability_details = [
     [PRECI, OFF, STA, BDB, SEL, "Concentration", "This Precision ability increases your precision and weapon skills by (15/25/37/48) but decreases your Power by (25/50/75/100). Only one stance may be used at a time.", [60, 105, 150, 195] ], 
 
     [RIFLE, OFF, PAT, DEB, WEA, "Agonizing Wound", "This Rifle ability causes your next attack to slow your target by (17/19/21/23/25)% for 10 seconds. Costs (30/46/63/80/96) stamina and has a 30 second cooldown. Resist-Reflex.", [54, 84, 114, 144, 174] ], 
-    [RIFLE, OFF, ASK, BUF, SEL, "Bull's Eye", "+Damage (35-40-45-50-60%) 1 shot within 6 sec", [60, 90, 120, 150, 180] ], 
-    [RIFLE, OFF, STA, BUF, SEL, "Marksman", "+Rifle skill (15/25/37)", [60, 105, 150] ], 
+    [RIFLE, OFF, ASK, BUF, SEL, "Bull's Eye", "This Rifle ability adds (35/45/45/50/60)% physical damage to your next attack within the next 6 seconds. Costs (40/48/56/64/80) stamina and has a 15 second cooldown.", [60, 90, 120, 150, 180] ], 
+    [RIFLE, OFF, STA, BUF, SEL, "Marksman", "This Rifle ability increases your rifle skill by (15/25/37). Only one stance may be used at a time.", [60, 105, 150] ], 
 
     [SOCIA, DEF, ASK, BDB, FRI, "Diplomatic Immunity", " +All Armor & Defence 12sec", [60, 90, 120, 150, 180] ], 
     [SOCIA, SUP, AUR, BUF, TEA, "Motivational Speaker", "+3-6-9-12-15% to all heals", [70, 100, 130, 160, 190] ], 
