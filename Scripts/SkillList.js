@@ -135,9 +135,9 @@ var ability_details = [
     [RIFLE, OFF, ASK, BUF, SEL, "Bull's Eye", "This Rifle ability adds (35/45/45/50/60)% physical damage to your next attack within the next 6 seconds. Costs (40/48/56/64/80) stamina and has a 15 second cooldown.", [60, 90, 120, 150, 180] ], 
     [RIFLE, OFF, STA, BUF, SEL, "Marksman", "This Rifle ability increases your rifle skill by (15/25/37). Only one stance may be used at a time.", [60, 105, 150] ], 
 
-    [SOCIA, DEF, ASK, BDB, FRI, "Diplomatic Immunity", " +All Armor & Defence 12sec", [60, 90, 120, 150, 180] ], 
-    [SOCIA, SUP, AUR, BUF, TEA, "Motivational Speaker", "+3-6-9-12-15% to all heals", [70, 100, 130, 160, 190] ], 
-    [SOCIA, DEF, ASK, DEB, ENE, "Inconspicuous", "-Threat", [45, 75, 105, 135, 165, 195] ], 
+    [SOCIA, DEF, ASK, BDB, FRI, "Diplomatic Immunity", "This Social ability increases your Primary, Secondary, and Tertiary armor by (100/200/400/600/800), (200/400/600/800/1000), and (250/500/750/1000/1250), and your melee and ranged defense by (12/24/36/48/64) for 15 seconds. If casted on self effects are reduced by 50%. Costs (25/37/50/62/75) stamina and has a 1 minute cooldown.", [60, 90, 120, 150, 180] ], 
+    [SOCIA, SUP, AUR, BUF, TEA, "Motivational Speaker", "This Social ability increases the effectiveness of heals on your team by (3/6/9/12/15)%. You may only run one aura at a time.", [70, 100, 130, 160, 190] ], 
+    [SOCIA, DEF, ASK, DEB, ENE, "Inconspicuous", "This Social ability reduces the aggression your target has toward you. Costs (11/19/26/34/41/45) Stamina and has a 30 second cooldown.", [45, 75, 105, 135, 165, 195] ], 
 
 // Mutation Abilities
     [ALPHA, OFF, TOG, BUF, SEL, "Bolster", "+Max Stamina +Power", [9, 30, 51, 72] ], 
