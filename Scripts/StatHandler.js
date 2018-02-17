@@ -70,7 +70,8 @@ function check_attribute(s1, pc1, s2, pc2, num)
 {
   var min_value = 1;
   // Changed formula to correct values : Confirmed by email from devs!
-  var max_value = Math.round(((st_stats[s1] * pc1) + (st_stats[s2] * pc2)) * 2);
+  var max_value = Math.round((st_stats[s1] * pc1) + (st_stats[s2] * pc2)) * 2;
+  if (num == CRAFT) var max_value = Math.round(((st_stats[s1] * pc1) + (st_stats[s2] * pc2)) * 2);
   var cur_value = st_stats[num];
   
   if (cur_value < min_value)  cur_value = min_value;
